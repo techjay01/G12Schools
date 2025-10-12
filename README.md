@@ -1,23 +1,22 @@
-🏫 G12Schools – Departmental Student Information Board
+# 🏫 G12Schools – Departmental Student Information Board
 
-A full-stack web application that allows students to view departmental announcements, timetables, events, and results.
-Built for CIT306 – Web Design and Programming, Federal University of Technology, Owerri (FUTO).
+A full-stack web application that allows students to view departmental announcements, timetables, events, and results.  
+Built for **CIT306 – Web Design and Programming**, Federal University of Technology, Owerri (FUTO).
 
-🚀 Features
+---
 
-View announcements, events, timetable, and results
+## 🚀 Features
+- View announcements, events, timetable, and results  
+- Admin login (shared credentials) to post and manage updates  
+- Search and filter notices  
+- Archive old posts  
+- Responsive design for mobile and desktop  
+- Secure backend integration with Node.js and MongoDB  
 
-Admin login (shared credentials) to post and manage updates
+---
 
-Search and filter notices
-
-Archive old posts
-
-Responsive design for mobile and desktop
-
-Secure backend integration with Node.js and MongoDB
-
-🧱 Project Structure
+## 🧱 Project Structure
+```
 G12Schools/
 │
 ├── frontend/
@@ -39,89 +38,101 @@ G12Schools/
 │   └── .gitignore
 │
 └── README.md
+```
 
-⚙️ Installation and Setup
-1️⃣ Clone the Repository
+---
+
+## ⚙️ Installation and Setup
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/<your-username>/G12Schools.git
 cd G12Schools
+```
 
-2️⃣ Backend Setup
+### 2️⃣ Backend Setup
+```bash
 cd backend
 npm install
 cp .env.example .env
 # Edit .env to include your MongoDB URI and admin credentials
 npm run dev
+```
+Your backend will run at **http://localhost:5000**
 
+### 3️⃣ Frontend Setup
+Simply open `frontend/index.html` in your browser  
+—or use VS Code’s **Live Server** extension for auto-reload.
 
-Your backend will run at http://localhost:5000
+---
 
-3️⃣ Frontend Setup
-
-Simply open frontend/index.html in your browser
-—or use VS Code’s Live Server extension for auto-reload.
-
-🔐 Admin Login
-
-Use the shared credentials in your .env file:
-
+## 🔐 Admin Login
+Use the shared credentials in your `.env` file:
+```
 Email: admin@g12schools.edu
 Password: ********
+```
 
-💾 Technologies Used
-Layer	Technology
-Frontend	HTML, CSS (Vanilla), JavaScript
-Backend	Node.js, Express.js
-Database	MongoDB (Mongoose ORM)
-Hosting	Netlify (frontend), Render/Railway (backend)
-Version Control	Git + GitHub
-👥 Team Members (Group of 10)
-Role	Name
-Team Lead / Full Stack Developer	Your Name
-Frontend Developer	
-Backend Developer	
-UI/UX Designer	
-Database Administrator	
-Quality Assurance / Tester	
-Content Developer	
-Documentation Lead	
-Deployment / Hosting	
-Security Analyst	
-🧠 Contribution Guide
-For All Team Members:
+---
 
-Clone the repository
+## 💾 Technologies Used
+| Layer | Technology |
+|-------|-------------|
+| Frontend | HTML, CSS (Vanilla), JavaScript |
+| Backend | Node.js, Express.js |
+| Database | MongoDB (Mongoose ORM) |
+| Hosting | Netlify (frontend), Render/Railway (backend) |
+| Version Control | Git + GitHub |
 
-git clone https://github.com/<your-username>/G12Schools.git
+---
 
+## 👥 Team Members (Group of 10)
 
-Create a new branch
+| Role | Name |
+|------|------|
+| Team Lead / Full Stack Developer | Your Name |
+| Frontend Developer | |
+| Backend Developer | |
+| UI/UX Designer | |
+| Database Administrator | |
+| Quality Assurance / Tester | |
+| Content Developer | |
+| Documentation Lead | |
+| Deployment / Hosting | |
+| Security Analyst | |
 
-git checkout -b feature-name
+---
 
+## 🧠 Contribution Guide
 
-Make changes and commit
+### For All Team Members:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/<your-username>/G12Schools.git
+   ```
+2. **Create a new branch**
+   ```bash
+   git checkout -b feature-name
+   ```
+3. **Make changes and commit**
+   ```bash
+   git add .
+   git commit -m "Describe your change"
+   ```
+4. **Push to GitHub**
+   ```bash
+   git push origin feature-name
+   ```
+5. **Create a Pull Request**
+   - Go to the repository on GitHub  
+   - Click “Compare & Pull Request”  
+   - Add a brief description and submit for review  
 
-git add .
-git commit -m "Describe your change"
+---
 
-
-Push to GitHub
-
-git push origin feature-name
-
-
-Create a Pull Request
-
-Go to the repository on GitHub
-
-Click “Compare & Pull Request”
-
-Add a brief description and submit for review
-
-📁 .gitignore Explained
-
+## 📁 .gitignore Explained
 To keep the repository clean and secure, the following files are ignored:
-
+```
 # Node.js dependencies
 node_modules/
 
@@ -140,10 +151,14 @@ backend/uploads/
 Thumbs.db
 .vscode/
 .idea/
+```
 
-🧾 License
+---
 
-This project was developed for academic purposes under the
-Department of Information and Communication Technology, Federal University of Technology, Owerri (FUTO).
+## 🧾 License
+This project was developed for **academic purposes** under the  
+*Department of Information and Communication Technology, Federal University of Technology, Owerri (FUTO).*
 
-✨ Developed with teamwork and excellence by the G12Schools Team ❤️
+---
+
+### ✨ Developed with teamwork and excellence by the G12Schools Team ❤️
