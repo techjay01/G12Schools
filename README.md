@@ -1,0 +1,149 @@
+🏫 G12Schools – Departmental Student Information Board
+
+A full-stack web application that allows students to view departmental announcements, timetables, events, and results.
+Built for CIT306 – Web Design and Programming, Federal University of Technology, Owerri (FUTO).
+
+🚀 Features
+
+View announcements, events, timetable, and results
+
+Admin login (shared credentials) to post and manage updates
+
+Search and filter notices
+
+Archive old posts
+
+Responsive design for mobile and desktop
+
+Secure backend integration with Node.js and MongoDB
+
+🧱 Project Structure
+G12Schools/
+│
+├── frontend/
+│   ├── index.html
+│   ├── css/
+│   ├── js/
+│   └── assets/
+│
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── uploads/
+│   ├── server.js
+│   ├── package.json
+│   ├── .env.example
+│   └── .gitignore
+│
+└── README.md
+
+⚙️ Installation and Setup
+1️⃣ Clone the Repository
+git clone https://github.com/<your-username>/G12Schools.git
+cd G12Schools
+
+2️⃣ Backend Setup
+cd backend
+npm install
+cp .env.example .env
+# Edit .env to include your MongoDB URI and admin credentials
+npm run dev
+
+
+Your backend will run at http://localhost:5000
+
+3️⃣ Frontend Setup
+
+Simply open frontend/index.html in your browser
+—or use VS Code’s Live Server extension for auto-reload.
+
+🔐 Admin Login
+
+Use the shared credentials in your .env file:
+
+Email: admin@g12schools.edu
+Password: ********
+
+💾 Technologies Used
+Layer	Technology
+Frontend	HTML, CSS (Vanilla), JavaScript
+Backend	Node.js, Express.js
+Database	MongoDB (Mongoose ORM)
+Hosting	Netlify (frontend), Render/Railway (backend)
+Version Control	Git + GitHub
+👥 Team Members (Group of 10)
+Role	Name
+Team Lead / Full Stack Developer	Your Name
+Frontend Developer	
+Backend Developer	
+UI/UX Designer	
+Database Administrator	
+Quality Assurance / Tester	
+Content Developer	
+Documentation Lead	
+Deployment / Hosting	
+Security Analyst	
+🧠 Contribution Guide
+For All Team Members:
+
+Clone the repository
+
+git clone https://github.com/<your-username>/G12Schools.git
+
+
+Create a new branch
+
+git checkout -b feature-name
+
+
+Make changes and commit
+
+git add .
+git commit -m "Describe your change"
+
+
+Push to GitHub
+
+git push origin feature-name
+
+
+Create a Pull Request
+
+Go to the repository on GitHub
+
+Click “Compare & Pull Request”
+
+Add a brief description and submit for review
+
+📁 .gitignore Explained
+
+To keep the repository clean and secure, the following files are ignored:
+
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Uploaded files
+uploads/
+backend/uploads/
+
+# Logs
+*.log
+
+# OS / Editor settings
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+🧾 License
+
+This project was developed for academic purposes under the
+Department of Information and Communication Technology, Federal University of Technology, Owerri (FUTO).
+
+✨ Developed with teamwork and excellence by the G12Schools Team ❤️
