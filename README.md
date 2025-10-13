@@ -27,22 +27,13 @@ G12Schools/
 │   ├── routes/
 │   ├── .env
 │   ├── package.json
-│   ├── server.js
-│   └── .gitignore
-│
+│   └── server.js
+|
 ├── frontend/
-│   ├── assets/
-│   ├── css/
-│   ├── js/
-│   ├── admin.html
-│   ├── announcement.html
-│   ├── archive.html
-│   ├── events.html
-│   ├── index.html
-│   ├── login.html
-│   ├── results.html
-│   └── timetable.html
-│
+│   ├── assets/             # Icons, Pictures, SRS, documentation
+│   ├── css/                # CSS files
+│   ├── js/                 # JavaScript files
+│   └── pages/              # HTML Pages  
 ├── .gitignore
 └── README.md
 ```
@@ -68,7 +59,7 @@ npm run dev
 Your backend will run at **http://localhost:5000**
 
 ### 3️⃣ Frontend Setup
-Simply open `frontend/index.html` in your browser  
+Simply open `https://g12schools.netlify.app/` in your browser  
 —or use VS Code’s **Live Server** extension for auto-reload.
 
 ---
