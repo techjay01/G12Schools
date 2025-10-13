@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G12Schools</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timetable.css">
 </head>
 <body>
     <aside class="sidebar">
@@ -17,7 +19,7 @@
             </div>
 
             <p class="sidebar-top-department">Computer Science Department</p>
-            <span class="sidebar-top-online-status"><img src="" alt="green online status">System Online</span>
+            <span class="sidebar-top-online-status"><img src="" alt="green online status">🟢 System Online</span>
         </div>
 
         <div class="sidebar-middle">
@@ -32,7 +34,11 @@
         </div>
 
         <div class="sidebar-bottom">
-            <a href="login.html"><img src="" alt="login icon">Admin Login</a>
+            <ul>
+                <li><a href="admin.html"><img src="" alt="admin icon">Admin Panel</a></li>
+                <li><a href="index.html"><img src="" alt="login icon">Logout Admin</a></li>
+                <li><a href="login.html"><img src="" alt="login icon">Admin Login</a></li>
+            </ul>
         </div>
     </aside>
 
@@ -41,16 +47,18 @@
             <img src="" alt="menu icon">
             <div class="header-left-department-info">
                 <h1>Computer Science Department</h1>
-                <h3>School of Information and Communication Technology</h3>
+                <h4>School of Information and Communication Technology</h4>
             </div>
         </div>
 
         <div class="header-right">
-            <button class="header-search-button">
-                <img src="" alt="search icon">
-            </button>
-            <input class="search-bar" type="text" placeholder="Search announcements, events...">
-
+            <div class="header-search-bar-div">
+                <button class="header-search-button">
+                    <img src="" alt="search icon">
+                </button>
+                <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
+            </div>
+            
             <img src="" alt="notification icon">
             <div class="header-notification-ping"></div>
         </div>
@@ -69,69 +77,77 @@
                     </div>
 
                     <div class="timetable-options">
-                        <input type="text">
-                        <input type="text">
+                        <button type="button" class="timetable-first-dropdown">
+                            <span>Rain Semester 2025</span>
+                            <img src="" alt="dropdown icon">
+                        </button>
+                        <button type="button" class="timetable-second-dropdown">
+                            <span>2nd Year</span>
+                            <img src="" alt="dropdown icon">
+                        </button>
                     </div>
                 </div>
 
                 <div class="timetable-toggle">
-                    <p>Weekly Schedule</p>
-                    <p>Course List</p>
-                    <p>Exam Timetable</p>
+                    <button type="button">Weekly Schedule</button>
+                    <button type="button">Course List</button>
+                    <button type="button">Exam Timetable</button>
                 </div>
+            </div>
 
+            <div>
                 <h3>Weekly Class Schedule</h3>
                 <p>1st Year - Rain Semester 2025</p>
 
-                <div></div>
+                <div class="timetable-schedule">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>09:00-10:30</th>
+                                <td>CSC201</td>
+                                <td>CSC203</td>
+                                <td>CSC201</td>
+                                <td>CSC202</td>
+                                <td>CSC204</td>
+                            </tr>
+                            <tr>
+                                <th>11:00-12:30</th>
+                                <td>CSC202</td>
+                                <td>CSC204</td>
+                                <td>CSC205</td>
+                                <td>CSC203</td>
+                                <td>CSC205</td>
+                            </tr>
+                            <tr>
+                                <th>14:00-16:00</th>
+                                <td>CSC301L</td>
+                                <td>CSC302L</td>
+                                <td>CSC303L</td>
+                                <td>CSC301P</td>
+                                <td>CSC302L</td>
+                            </tr>
+                            <tr>
+                                <th>16:30-18:00</th>
+                                <td>Free</td>
+                                <td>Free</td>
+                                <td>Free</td>
+                                <td>Free</td>
+                                <td>Free</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>09:00-10:30</th>
-                        <td>CSC201</td>
-                        <td>CSC203</td>
-                        <td>CSC201</td>
-                        <td>CSC202</td>
-                        <td>CSC204</td>
-                    </tr>
-                    <tr>
-                        <th>11:00-12:30</th>
-                        <td>CSC202</td>
-                        <td>CSC204</td>
-                        <td>CSC205</td>
-                        <td>CSC203</td>
-                        <td>CSC205</td>
-                    </tr>
-                    <tr>
-                        <th>14:00-16:00</th>
-                        <td>CSC301L</td>
-                        <td>CSC302L</td>
-                        <td>CSC303L</td>
-                        <td>CSC301P</td>
-                        <td>CSC302L</td>
-                    </tr>
-                    <tr>
-                        <th>16:30-18:00</th>
-                        <td>Free</td>
-                        <td>Free</td>
-                        <td>Free</td>
-                        <td>Free</td>
-                        <td>Free</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
 
         <div class="timetable-after">
@@ -156,7 +172,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 G12Schools | School Imformation Board | All rights reserved.</p>
+        <p>&copy; 2025 G12Schools • School Imformation Board • All rights reserved.</p>
     </footer>
     
 </body>

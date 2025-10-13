@@ -19,24 +19,31 @@ Built for **CIT306 – Web Design and Programming**, Federal University of Techn
 ```
 G12Schools/
 │
-├── frontend/
-│   ├── index.html
-│   ├── css/
-│   ├── js/
-│   └── assets/
-│
 ├── backend/
 │   ├── config/
 │   ├── controllers/
 │   ├── middleware/
 │   ├── models/
 │   ├── routes/
-│   ├── uploads/
-│   ├── server.js
+│   ├── .env
 │   ├── package.json
-│   ├── .env.example
+│   ├── server.js
 │   └── .gitignore
 │
+├── frontend/
+│   ├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── admin.html
+│   ├── announcement.html
+│   ├── archive.html
+│   ├── events.html
+│   ├── index.html
+│   ├── login.html
+│   ├── results.html
+│   └── timetable.html
+│
+├── .gitignore
 └── README.md
 ```
 
@@ -46,7 +53,7 @@ G12Schools/
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/G12Schools.git
+git clone https://github.com/techjay01/G12Schools.git
 cd G12Schools
 ```
 
@@ -69,7 +76,7 @@ Simply open `frontend/index.html` in your browser
 ## 🔐 Admin Login
 Use the shared credentials in your `.env` file:
 ```
-Email: admin@g12schools.edu
+Username: admin
 Password: ********
 ```
 
@@ -90,10 +97,10 @@ Password: ********
 
 | Role | Name |
 |------|------|
-| Team Lead / Full Stack Developer | Your Name |
+| Team Lead / Full Stack Developer | Mbamara Joshua |
 | Frontend Developer | |
 | Backend Developer | |
-| UI/UX Designer | |
+| UI/UX Designer | Mgbeahuru Valentine |
 | Database Administrator | |
 | Quality Assurance / Tester | |
 | Content Developer | |
@@ -108,7 +115,7 @@ Password: ********
 ### For All Team Members:
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<your-username>/G12Schools.git
+   git clone https://github.com/techjay01/G12Schools.git
    ```
 2. **Create a new branch**
    ```bash

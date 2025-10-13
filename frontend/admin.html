@@ -19,7 +19,7 @@
             </div>
 
             <p class="sidebar-top-department">Computer Science Department</p>
-            <span class="sidebar-top-online-status"><img src="" alt="green online status">System Online</span>
+            <span class="sidebar-top-online-status"><img src="" alt="green online status">🟢 System Online</span>
         </div>
 
         <div class="sidebar-middle">
@@ -34,7 +34,11 @@
         </div>
 
         <div class="sidebar-bottom">
-            <a href="login.html"><img src="" alt="login icon">Admin Login</a>
+            <ul>
+                <li><a href="admin.html"><img src="" alt="admin icon">Admin Panel</a></li>
+                <li><a href="index.html"><img src="" alt="login icon">Logout Admin</a></li>
+                <li><a href="login.html"><img src="" alt="login icon">Admin Login</a></li>
+            </ul>
         </div>
     </aside>
 
@@ -43,20 +47,26 @@
             <img src="" alt="menu icon">
             <div class="header-left-department-info">
                 <h1>Computer Science Department</h1>
-                <h3>School of Information and Communication Technology</h3>
+                <h4>School of Information and Communication Technology</h4>
             </div>
         </div>
 
         <div class="header-right">
-            <button class="header-search-button">
-                <img src="" alt="search icon">
-            </button>
-            <input class="search-bar" type="text" placeholder="Search announcements, events...">
-
+            <div class="header-search-bar-div">
+                <button class="header-search-button">
+                    <img src="" alt="search icon">
+                </button>
+                <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
+            </div>
+            
             <img src="" alt="notification icon">
             <div class="header-notification-ping"></div>
         </div>
     </header>
+
+    <footer>
+        <p>&copy; 2025 G12Schools • School Imformation Board • All rights reserved.</p>
+    </footer>
     
 </body>
 </html>
