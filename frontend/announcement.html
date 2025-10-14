@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/announcement.css">
 </head>
 <body>
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
         <div class="sidebar-top">
             <div class="sidebar-top-website-info">
                 <img src="assets/logo.jpg" alt="G12Schools logo">
@@ -42,135 +42,156 @@
         </div>
     </aside>
 
-    <header>
-        <div class="header-left">
-            <img src="assets/icons/menu.png" alt="menu icon">
-            <div class="header-left-department-info">
-                <img src="assets/logo.jpg" alt="G12 Logo">
-                <div>
-                    <h2>Computer Science Department</h2>
-                    <p>School of Information and Communication Technology</p>
+    <div class="sidebar-active" id="sidebar-active">
+        <header>
+            <div class="header-left">
+                <img src="assets/icons/menu.png" alt="menu icon" id="menu-icon">
+                <div class="header-left-department-info">
+                    <img src="assets/logo.jpg" alt="G12 Logo">
+                    <div>
+                        <h2>Computer Science Department</h2>
+                        <p>School of Information and Communication Technology</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="header-right">
-            <div class="header-search-bar-div">
-                <div class="header-search-icon">
-                    <img src="assets/icons/search.png" alt="search icon">
+            <div class="header-right">
+                <div class="header-search-bar-div">
+                    <div class="header-search-icon">
+                        <img src="assets/icons/search.png" alt="search icon">
+                    </div>
+                    <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
                 </div>
-                <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
-            </div>
-            
-            <div class="header-notification">
-                <img src="assets/icons/notification.png" alt="notification icon">
-                <div class="header-notification-ping"></div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="main-announcement-description">
-            <div class="main-announcement-head">
-                <img src="" alt="notification icon">
-                <h3>Department Announcements</h3>
-            </div>
-            <p>Stay updated with the latest news and important information</p>
-            <div class="main-announcement-filter">
-                <button type="button">
-                    <span data-slot="select-value" style="pointer-events: none;">All Types</span>
-                    <img src="" alt="dropdown icon">
-                </button>
                 
-                <button type="button">
-                    <span data-slot="select-value" style="pointer-events: none;">All Priorities</span>
-                    <img src="" alt="dropdown icon">
-                </button>
-
-                <button type="button">
-                    <span data-slot="select-value" style="pointer-events: none;">Sort by Date</span>
-                    <img src="" alt="dropdown icon">
-                </button>
+                <div class="header-notification">
+                    <img src="assets/icons/notification.png" alt="notification icon">
+                    <div class="header-notification-ping"></div>
+                </div>
             </div>
-        </div>
+        </header>
 
-        <div class="main-announcement-div">
-            <div class="main-announcement">
-                <div class="announcement-title">
-                    <h3>EXAMINATION POSTPONEMENT NOTICE</h3>
-                    <div>
-                        <p>high priority</p>
-                        <p>urgent</p>
-                    </div>
+        <main>
+            <div class="main-announcement-description">
+                <div class="main-announcement-head">
+                    <img src="" alt="notification icon">
+                    <h3>Department Announcements</h3>
                 </div>
+                <p>Stay updated with the latest news and important information</p>
+                <div class="main-announcement-filter">
+                    <button type="button">
+                        <span data-slot="select-value" style="pointer-events: none;">All Types</span>
+                        <img src="" alt="dropdown icon">
+                    </button>
+                    
+                    <button type="button">
+                        <span data-slot="select-value" style="pointer-events: none;">All Priorities</span>
+                        <img src="" alt="dropdown icon">
+                    </button>
 
-                <div class="announcement-message"> 
-                    Due to unforeseen circumstances, all scheduled examinations have been postponed from September 15th to September 22nd, 2025. New examination schedule will be released shortly. Students are advised to continue their preparation and stay updated through official channels.
-                </div>
-
-                <div class="announcement-details">
-                    <div>Academic Office - 9/1/2025</div>
-
-                    <div>
-                        <p>urgent</p>
-                        <p>examnination</p>
-                        <p>postponement</p>
-                    </div>
+                    <button type="button">
+                        <span data-slot="select-value" style="pointer-events: none;">Sort by Date</span>
+                        <img src="" alt="dropdown icon">
+                    </button>
                 </div>
             </div>
 
-            <div class="main-announcement">
-                <div class="announcement-title">
-                    <h3>EXAMINATION POSTPONEMENT NOTICE</h3>
-                    <div>
-                        <p>high priority</p>
-                        <p>urgent</p>
+            <div class="main-announcement-div">
+                <div class="main-announcement">
+                    <div class="announcement-title">
+                        <h3>EXAMINATION POSTPONEMENT NOTICE</h3>
+                        <div>
+                            <p>high priority</p>
+                            <p>urgent</p>
+                        </div>
+                    </div>
+
+                    <div class="announcement-message"> 
+                        Due to unforeseen circumstances, all scheduled examinations have been postponed from September 15th to September 22nd, 2025. New examination schedule will be released shortly. Students are advised to continue their preparation and stay updated through official channels.
+                    </div>
+
+                    <div class="announcement-details">
+                        <div>Academic Office - 9/1/2025</div>
+
+                        <div>
+                            <p>urgent</p>
+                            <p>examnination</p>
+                            <p>postponement</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="announcement-message"> 
-                    Due to unforeseen circumstances, all scheduled examinations have been postponed from September 15th to September 22nd, 2025. New examination schedule will be released shortly. Students are advised to continue their preparation and stay updated through official channels.
+                <div class="main-announcement">
+                    <div class="announcement-title">
+                        <h3>EXAMINATION POSTPONEMENT NOTICE</h3>
+                        <div>
+                            <p>high priority</p>
+                            <p>urgent</p>
+                        </div>
+                    </div>
+
+                    <div class="announcement-message"> 
+                        Due to unforeseen circumstances, all scheduled examinations have been postponed from September 15th to September 22nd, 2025. New examination schedule will be released shortly. Students are advised to continue their preparation and stay updated through official channels.
+                    </div>
+
+                    <div class="announcement-details">
+                        <div>Academic Office - 9/1/2025</div>
+
+                        <div>
+                            <p>urgent</p>
+                            <p>examnination</p>
+                            <p>postponement</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="announcement-details">
-                    <div>Academic Office - 9/1/2025</div>
+                <div class="main-announcement">
+                    <div class="announcement-title">
+                        <h3>EXAMINATION POSTPONEMENT NOTICE</h3>
+                        <div>
+                            <p>high priority</p>
+                            <p>urgent</p>
+                        </div>
+                    </div>
 
-                    <div>
-                        <p>urgent</p>
-                        <p>examnination</p>
-                        <p>postponement</p>
+                    <div class="announcement-message"> 
+                        Due to unforeseen circumstances, all scheduled examinations have been postponed from September 15th to September 22nd, 2025. New examination schedule will be released shortly. Students are advised to continue their preparation and stay updated through official channels.
+                    </div>
+
+                    <div class="announcement-details">
+                        <div>Academic Office - 9/1/2025</div>
+
+                        <div>
+                            <p>urgent</p>
+                            <p>examnination</p>
+                            <p>postponement</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 G12Schools • Student Information Board • All rights reserved.</p>
+        </footer>
+    </div>
 
-            <div class="main-announcement">
-                <div class="announcement-title">
-                    <h3>EXAMINATION POSTPONEMENT NOTICE</h3>
-                    <div>
-                        <p>high priority</p>
-                        <p>urgent</p>
-                    </div>
-                </div>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarActive = document.getElementById('sidebar-active');
 
-                <div class="announcement-message"> 
-                    Due to unforeseen circumstances, all scheduled examinations have been postponed from September 15th to September 22nd, 2025. New examination schedule will be released shortly. Students are advised to continue their preparation and stay updated through official channels.
-                </div>
+        menuIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        sidebarActive.classList.toggle('shift');
+        });
 
-                <div class="announcement-details">
-                    <div>Academic Office - 9/1/2025</div>
+        document.addEventListener('click', (e) => {
+        if (!sidebar.contains(e.target) && !menuIcon.contains(e.target)) {
+            sidebar.classList.remove('active');
+            sidebarActive.classList.remove('shift');
+        }
+        });
 
-                    <div>
-                        <p>urgent</p>
-                        <p>examnination</p>
-                        <p>postponement</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 G12Schools • Student Information Board • All rights reserved.</p>
-    </footer>
+    </script>
 </body>
 </html>

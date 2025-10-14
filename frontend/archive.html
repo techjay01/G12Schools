@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/archive.css">
 </head>
 <body>
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
         <div class="sidebar-top">
             <div class="sidebar-top-website-info">
                 <img src="assets/logo.jpg" alt="G12Schools logo">
@@ -42,151 +42,172 @@
         </div>
     </aside>
 
-    <header>
-        <div class="header-left">
-            <img src="assets/icons/menu.png" alt="menu icon">
-            <div class="header-left-department-info">
-                <img src="assets/logo.jpg" alt="G12 Logo">
+    <div class="sidebar-active" id="sidebar-active">
+        <header>
+            <div class="header-left">
+                <img src="assets/icons/menu.png" alt="menu icon" id="menu-icon">
+                <div class="header-left-department-info">
+                    <img src="assets/logo.jpg" alt="G12 Logo">
+                    <div>
+                        <h2>Computer Science Department</h2>
+                        <p>School of Information and Communication Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <div class="header-search-bar-div">
+                    <div class="header-search-icon">
+                        <img src="assets/icons/search.png" alt="search icon">
+                    </div>
+                    <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
+                </div>
+                
+                <div class="header-notification">
+                    <img src="assets/icons/notification.png" alt="notification icon">
+                    <div class="header-notification-ping"></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="archive-div">
+                <div class="archive-details">
+                    <div class="archive-head">
+                        <img src="" alt="archive icon">
+                        <h3>Department Archive</h3>
+                    </div>
+                    <p>Browse historical announcements, events, results, and important documents</p>
+                </div>
+
+                <div class="archive-menu">
+                    <button type="button">All Types</button>
+                    <button type="button">All Years</button>
+                    <button type="button">All Categories</button>
+                    <button type="button">Sort by Date</button>
+                </div>
+
+                <div class="archive-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Type</th>
+                                <th>Category</th>
+                                <th>Published</th>
+                                <th>Archived</th>
+                                <th>Downloads</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>📊 Harmattan Semester Final Examination Results</td>
+                                <td>
+                                    <button>Result</button>
+                                </td>
+                                <td>Academic Records</td>
+                                <td>6/15/2025</td>
+                                <td>8/1/2025</td>
+                                <td>156</td>
+                                <td>
+                                    <button><img src="" alt="eye icon"></button>
+                                    <button><img src="" alt="download icon"></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>📊 Harmattan Semester Final Examination Results</td>
+                                <td>
+                                    <button>Result</button>
+                                </td>
+                                <td>Academic Records</td>
+                                <td>6/15/2025</td>
+                                <td>8/1/2025</td>
+                                <td>156</td>
+                                <td>
+                                    <button><img src="" alt="eye icon"></button>
+                                    <button><img src="" alt="download icon"></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>📊 Harmattan Semester Final Examination Results</td>
+                                <td>
+                                    <button>Result</button>
+                                </td>
+                                <td>Academic Records</td>
+                                <td>6/15/2025</td>
+                                <td>8/1/2025</td>
+                                <td>156</td>
+                                <td>
+                                    <button><img src="" alt="eye icon"></button>
+                                    <button><img src="" alt="download icon"></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>📊 Harmattan Semester Final Examination Results</td>
+                                <td>
+                                    <button>Result</button>
+                                </td>
+                                <td>Academic Records</td>
+                                <td>6/15/2025</td>
+                                <td>8/1/2025</td>
+                                <td>156</td>
+                                <td>
+                                    <button><img src="" alt="eye icon"></button>
+                                    <button><img src="" alt="download icon"></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="archive-after">
                 <div>
-                    <h2>Computer Science Department</h2>
-                    <p>School of Information and Communication Technology</p>
+                    <span>10</span>
+                    <p>Total Items</p>
+                </div>
+                <div>
+                    <span>1922</span>
+                    <p>Total Downloads</p>
+                </div>
+                <div>
+                    <span>2</span>
+                    <p>Years Covered</p>
+                </div>
+                <div>
+                    <span>10</span>
+                    <p>Categories</p>
                 </div>
             </div>
-        </div>
+        </main>
 
-        <div class="header-right">
-            <div class="header-search-bar-div">
-                <div class="header-search-icon">
-                    <img src="assets/icons/search.png" alt="search icon">
-                </div>
-                <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
-            </div>
-            
-            <div class="header-notification">
-                <img src="assets/icons/notification.png" alt="notification icon">
-                <div class="header-notification-ping"></div>
-            </div>
-        </div>
-    </header>
+        <footer>
+            <p>&copy; 2025 G12Schools • School Imformation Board • All rights reserved.</p>
+        </footer>
+    </div>
 
-    <main>
-        <div class="archive-div">
-            <div class="archive-details">
-                <div class="archive-head">
-                    <img src="" alt="archive icon">
-                    <h3>Department Archive</h3>
-                </div>
-                <p>Browse historical announcements, events, results, and important documents</p>
-            </div>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarActive = document.getElementById('sidebar-active');
 
-            <div class="archive-menu">
-                <button type="button">All Types</button>
-                <button type="button">All Years</button>
-                <button type="button">All Categories</button>
-                <button type="button">Sort by Date</button>
-            </div>
+        menuIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        sidebarActive.classList.toggle('shift');
+        });
 
-            <div class="archive-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Type</th>
-                            <th>Category</th>
-                            <th>Published</th>
-                            <th>Archived</th>
-                            <th>Downloads</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>📊 Harmattan Semester Final Examination Results</td>
-                            <td>
-                                <button>Result</button>
-                            </td>
-                            <td>Academic Records</td>
-                            <td>6/15/2025</td>
-                            <td>8/1/2025</td>
-                            <td>156</td>
-                            <td>
-                                <button><img src="" alt="eye icon"></button>
-                                <button><img src="" alt="download icon"></button>
-                            </td>
-                        </tr>
+        document.addEventListener('click', (e) => {
+        if (!sidebar.contains(e.target) && !menuIcon.contains(e.target)) {
+            sidebar.classList.remove('active');
+            sidebarActive.classList.remove('shift');
+        }
+        });
 
-                        <tr>
-                            <td>📊 Harmattan Semester Final Examination Results</td>
-                            <td>
-                                <button>Result</button>
-                            </td>
-                            <td>Academic Records</td>
-                            <td>6/15/2025</td>
-                            <td>8/1/2025</td>
-                            <td>156</td>
-                            <td>
-                                <button><img src="" alt="eye icon"></button>
-                                <button><img src="" alt="download icon"></button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>📊 Harmattan Semester Final Examination Results</td>
-                            <td>
-                                <button>Result</button>
-                            </td>
-                            <td>Academic Records</td>
-                            <td>6/15/2025</td>
-                            <td>8/1/2025</td>
-                            <td>156</td>
-                            <td>
-                                <button><img src="" alt="eye icon"></button>
-                                <button><img src="" alt="download icon"></button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>📊 Harmattan Semester Final Examination Results</td>
-                            <td>
-                                <button>Result</button>
-                            </td>
-                            <td>Academic Records</td>
-                            <td>6/15/2025</td>
-                            <td>8/1/2025</td>
-                            <td>156</td>
-                            <td>
-                                <button><img src="" alt="eye icon"></button>
-                                <button><img src="" alt="download icon"></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div class="archive-after">
-            <div>
-                <span>10</span>
-                <p>Total Items</p>
-            </div>
-            <div>
-                <span>1922</span>
-                <p>Total Downloads</p>
-            </div>
-            <div>
-                <span>2</span>
-                <p>Years Covered</p>
-            </div>
-            <div>
-                <span>10</span>
-                <p>Categories</p>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 G12Schools • School Imformation Board • All rights reserved.</p>
-    </footer>
+    </script>
     
 </body>
 </html>

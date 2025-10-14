@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
         <div class="sidebar-top">
             <div class="sidebar-top-website-info">
                 <img src="assets/logo.jpg" alt="G12Schools logo">
@@ -42,154 +42,185 @@
         </div>
     </aside>
 
-    <header>
-        <div class="header-left">
-            <img src="assets/icons/menu.png" alt="menu icon">
-            <div class="header-left-department-info">
-                <img src="assets/logo.jpg" alt="G12 Logo">
-                <div>
-                    <h2>Computer Science Department</h2>
-                    <p>School of Information and Communication Technology</p>
+    <div class="sidebar-active" id="sidebar-active">
+        <header>
+            <div class="header-left">
+                <img src="assets/icons/menu.png" alt="menu icon" id="menu-icon">
+                <div class="header-left-department-info">
+                    <img src="assets/logo.jpg" alt="G12 Logo">
+                    <div>
+                        <h2>Computer Science Department</h2>
+                        <p>School of Information and Communication Technology</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="header-right">
-            <div class="header-search-bar-div">
-                <div class="header-search-icon">
-                    <img src="assets/icons/search.png" alt="search icon">
+            <div class="header-right">
+                <div class="header-search-bar-div">
+                    <div class="header-search-icon">
+                        <img src="assets/icons/search.png" alt="search icon">
+                    </div>
+                    <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
                 </div>
-                <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
+                
+                <div class="header-notification">
+                    <img src="assets/icons/notification.png" alt="notification icon">
+                    <div class="header-notification-ping"></div>
+                </div>
             </div>
-            
-            <div class="header-notification">
-                <img src="assets/icons/notification.png" alt="notification icon">
-                <div class="header-notification-ping"></div>
+        </header>
+
+        <main>
+            <div class="hero-section">
+                <h1>Welcome to Computer Science Department</h1>
+                <p>Stay updated with the latest announcements and events</p>
             </div>
-        </div>
-    </header>
 
-    <main>
-        <div class="hero-section">
-            <h1>Welcome to Computer Science Department</h1>
-            <p>Stay updated with the latest announcements and events</p>
-        </div>
+            <div class="main-content">
+                <article class="main-announcements">
+                    <h4>Recent Announcements</h4>
+                    <p>Latest updates from the department</p>
 
-        <div class="main-content">
-            <article class="main-announcements">
-                <h3>Recent Announcements</h3>
-                <p>Latest updates from the department</p>
-
-                <div class="article-announcement">
-                    <div class="article-announcement-title">
-                        <h3>SICT RAIN SEMESTER EXAM TIMETABLE</h3>
-                        <div>Urgent</div>
-                        <div>Exam</div>
+                    <div class="article-announcement">
+                        <div class="article-announcement-title">
+                            <h4>SICT RAIN SEMESTER EXAM TIMETABLE</h4>
+                            <div class="article-announcement-tags">
+                                <div>Urgent</div>
+                                <div>Exam</div>
+                            </div>
+                        </div>
+                        <p>The SICT Rain Semester examination schedule for all CSC courses has been released. Please check your timetable section for detailed schedule.</p>
+                        <p class="feint-text">2025-08-28</p>
                     </div>
-                    <p>The SICT Rain Semester examination schedule for all CSC courses has been released. Please check your timetable section foe detailed schedule.</p>
-                    <p class="feint-text">2025-08-28</p>
-                </div>
 
-                <div class="article-announcement">
-                    <div class="article-announcement-title">
-                        <h3>EXAMINATION POSTPONEMENT NOTICE</h3>
-                        <div>Urgent</div>
-                        <div>Exam</div>
+                    <div class="article-announcement">
+                        <div class="article-announcement-title">
+                            <h4>EXAMINATION POSTPONEMENT NOTICE</h4>
+                            <div class="article-announcement-tags">
+                                <div>Urgent</div>
+                                <div>Exam</div>
+                            </div>
+                        </div>
+                        <p>Due to unforseen circumstances, all scheduled examinations have been postponed from September 15th to September 22nd, 2025. New examination schedule will be released shortly. Students are advised to continue their preparation.</p>
+                        <p class="feint-text">2025-09-01</p>
                     </div>
-                    <p>Due to unforseen circumstances, all scheduled examinations have been postponed from September 15th to September 22nd, 2025. New examination schedule will be released shortly. Students are advised to continue their preparation.</p>
-                    <p class="feint-text">2025-09-01</p>
-                </div>
 
-                <div class="article-announcement">
-                    <div class="article-announcement-title">
-                        <h3>GUEST WORKSHOP: ADVANCED COMPUTING TECHNIQUES</h3>
-                        <div>event</div>
+                    <div class="article-announcement">
+                        <div class="article-announcement-title">
+                            <h4>GUEST WORKSHOP: ADVANCED COMPUTING TECHNIQUES</h4>
+                            <div class="article-announcement-tags">
+                                <div>event</div>
+                            </div>
+                        </div>
+                        <p>Join us for an exciting workshop hosted by Prof. Onojo Ondoma with speakers Ihekwuaba Success (UI/UX) and Mbamara Joshua (Cloud Computing). Date: September 5, 2025, Time: 2:00PM, Venue: SMAT auditorium.</p>
+                        <p class="feint-text">2025-08-25</p>
                     </div>
-                    <p>Join us for an exciting workshop hosted by Prof. Onojo Ondoma with speakers Ihekwuaba Success (UI/UX) and Mbamara Joshua (Cloud Computing). Date: September 5, 2025, Time: 2:00PM, Venue: SMAT auditorium.</p>
-                    <p class="feint-text">2025-08-25</p>
-                </div>
 
-                <div class="article-announcement">
-                    <div class="article-announcement-title">
-                        <h3>PROGRAMMING COMPETITION WINNERS ANNOUNCED</h3>
-                        <div>event</div>
+                    <div class="article-announcement">
+                        <div class="article-announcement-title">
+                            <h4>PROGRAMMING COMPETITION WINNERS ANNOUNCED</h4>
+                            <div class="article-announcement-tags">
+                                <div>event</div>
+                            </div>
+                        </div>
+                        <p>Congratulations to the winners of the Annual Computer Programming Competition! 1st Place: Mbamara Joshua Elochukwu, 2nd Place: Mgbeahuru Valentine, 3rd Place: Mbamara Blessing. Other notable winners include Ndubuisi Divine, Mbam Cephas, and Ndukwe Testimony. Winners will receive certificates and cash prizes.</p>
+                        <p class="feint-text">2025-08-20</p>
                     </div>
-                    <p>Congratulations to the winners of the Annual Computer Programming Competition! 1st Place: Mbamara Joshua Elochukwu, 2nd Place: Mgbeahuru Valentine, 3rd Place: Mbamara Blessing. Other notable winners include Ndubuisi Divine, Mbam Cephas, and Ndukwe Testimony. Winners will receive certificates and cash prizes.</p>
-                    <p class="feint-text">2025-08-20</p>
-                </div>
 
-                <div class="article-announcement">
-                    <div class="article-announcement-title">
-                        <h3>INTERNSHIP OPPORTUNITIES AT TECH COMPANIES</h3>
-                        <div>opportunity</div>
+                    <div class="article-announcement">
+                        <div class="article-announcement-title">
+                            <h4>INTERNSHIP OPPORTUNITIES AT TECH COMPANIES</h4>
+                            <div class="article-announcement-tags">
+                                <div>opportunity</div>
+                                <div>internship</div>
+                            </div>
+                        </div>
+                        <p>Several tech companies are offering internship positions for computer science students. Application deadline: September 15, 2025.</p>
+                        <p class="feint-text">2025-08-18</p>
                     </div>
-                    <p>Several tech companies are offering internship positions for computer science students. Application deadline: September 15, 2025.</p>
-                    <p class="feint-text">2025-08-18</p>
-                </div>
-            </article>
+                </article>
 
-            <aside>
-                <div class="aside-upcoming-events">
-                    <h3>Upcoming Events</h3>
-                    <p>Don't miss these important events</p>
+                <aside class="aside-section">
+                    <div class="aside-upcoming-events">
+                        <h4>Upcoming Events</h4>
+                        <p>Don't miss these important events</p>
 
-                    <div class="aside-event">
-                        <img src="assets/icons/calendar-green.png" alt="events icon green">
-                        <div class="aside-event-details">
-                            <h3>Programming Contest</h3>
-                            <p class="feint-text">2025-09-10 at 10:00 AM</p>
+                        <div class="aside-event">
+                            <img src="assets/icons/calendar-green.png" alt="events icon green">
+                            <div class="aside-event-details">
+                                <h5>Programming Contest</h5>
+                                <p class="feint-text">2025-09-10 at 10:00 AM</p>
+                            </div>
+                        </div>
+
+                        <div class="aside-event">
+                            <img src="assets/icons/calendar-green.png" alt="events icon green">
+                            <div class="aside-event-details">
+                                <h5>Career Fair</h5>
+                                <p class="feint-text">2025-09-15 at 9:00 AM</p>
+                            </div>
+                        </div>
+
+                        <div class="aside-event">
+                            <img src="assets/icons/calendar-green.png" alt="events icon green">
+                            <div class="aside-event-details">
+                                <h5>Alumni Meetup</h5>
+                                <p class="feint-text">2025-09-20 at 6:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="aside-view-all"><a href="events.html"><h5>View All Events</h5></a></div>
+                    </div>
+
+                    <div class="aside-stats-pad">
+                        <h4>Quick Stats</h4>
+
+                        <div class="aside-stat">
+                            <p>Total Announcements</p>
+                            <div class="aside-stat-no">24</div>
+                        </div>
+
+                        <div class="aside-stat">
+                            <p>Upcoming Events</p>
+                            <div class="aside-stat-no">8</div>
+                        </div>
+
+                        <div class="aside-stat">
+                            <p>Recent Results</p>
+                            <div class="aside-stat-no">3</div>
+                        </div>
+
+                        <div class="aside-stat">
+                            <p>Active Students</p>
+                            <div class="aside-stat-no">150</div>
                         </div>
                     </div>
+                </aside>
+            </div>
+        </main>
 
-                    <div class="aside-event">
-                        <img src="assets/icons/calendar-green.png" alt="events icon green">
-                        <div class="aside-event-details">
-                            <h3>Career Fair</h3>
-                            <p class="feint-text">2025-09-15 at 9:00 AM</p>
-                        </div>
-                    </div>
+        <footer>
+            <p>&copy; 2025 G12Schools • Student Information Board • All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarActive = document.getElementById('sidebar-active');
 
-                    <div class="aside-event">
-                        <img src="assets/icons/calendar-green.png" alt="events icon green">
-                        <div class="aside-event-details">
-                            <h3>Alumni Meetup</h3>
-                            <p class="feint-text">2025-09-20 at 6:00 PM</p>
-                        </div>
-                    </div>
+        menuIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        sidebarActive.classList.toggle('shift');
+        });
 
-                    <div class="aside-view-all">View All Events</div>
-                </div>
+        document.addEventListener('click', (e) => {
+        if (!sidebar.contains(e.target) && !menuIcon.contains(e.target)) {
+            sidebar.classList.remove('active');
+            sidebarActive.classList.remove('shift');
+        }
+        });
 
-                <div class="aside-stats-pad">
-                    <h3>Quick Stats</h3>
-
-                    <div class="aside-stat">
-                        <p>Total Announcements</p>
-                        <div class="aside-stat-no">24</div>
-                    </div>
-
-                    <div class="aside-stat">
-                        <p>Upcoming Events</p>
-                        <div class="aside-stat-no">8</div>
-                    </div>
-
-                    <div class="aside-stat">
-                        <p>Recent Results</p>
-                        <div class="aside-stat-no">3</div>
-                    </div>
-
-                    <div class="aside-stat">
-                        <p>Active Students</p>
-                        <div class="aside-stat-no">150</div>
-                    </div>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 G12Schools • Student Information Board • All rights reserved.</p>
-    </footer>
-
+    </script>
 </body>
 </html>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/timetable.css">
 </head>
 <body>
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
         <div class="sidebar-top">
             <div class="sidebar-top-website-info">
                 <img src="assets/logo.jpg" alt="G12Schools logo">
@@ -42,143 +42,163 @@
         </div>
     </aside>
 
-    <header>
-        <div class="header-left">
-            <img src="assets/icons/menu.png" alt="menu icon">
-            <div class="header-left-department-info">
-                <img src="assets/logo.jpg" alt="G12 Logo">
-                <div>
-                    <h2>Computer Science Department</h2>
-                    <p>School of Information and Communication Technology</p>
+    <div class="sidebar-active" id="sidebar-active">
+        <header>
+            <div class="header-left">
+                <img src="assets/icons/menu.png" alt="menu icon" id="menu-icon">
+                <div class="header-left-department-info">
+                    <img src="assets/logo.jpg" alt="G12 Logo">
+                    <div>
+                        <h2>Computer Science Department</h2>
+                        <p>School of Information and Communication Technology</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="header-right">
-            <div class="header-search-bar-div">
-                <div class="header-search-icon">
-                    <img src="assets/icons/search.png" alt="search icon">
+            <div class="header-right">
+                <div class="header-search-bar-div">
+                    <div class="header-search-icon">
+                        <img src="assets/icons/search.png" alt="search icon">
+                    </div>
+                    <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
                 </div>
-                <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
+                
+                <div class="header-notification">
+                    <img src="assets/icons/notification.png" alt="notification icon">
+                    <div class="header-notification-ping"></div>
+                </div>
             </div>
-            
-            <div class="header-notification">
-                <img src="assets/icons/notification.png" alt="notification icon">
-                <div class="header-notification-ping"></div>
-            </div>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <div class="timetable-div">
-            <div class="timetable-details">
-                <div class="timetable-head">
-                    <div class="timetable-title-details">
-                        <div class="timetable-title">
-                            <img src="" alt="events icon">
-                            <h3>Class Timetable</h3>
+        <main>
+            <div class="timetable-div">
+                <div class="timetable-details">
+                    <div class="timetable-head">
+                        <div class="timetable-title-details">
+                            <div class="timetable-title">
+                                <img src="" alt="events icon">
+                                <h3>Class Timetable</h3>
+                            </div>
+                            <p>Weekly class schedule and course information</p>
                         </div>
-                        <p>Weekly class schedule and course information</p>
+
+                        <div class="timetable-options">
+                            <button type="button" class="timetable-first-dropdown">
+                                <span>Rain Semester 2025</span>
+                                <img src="" alt="dropdown icon">
+                            </button>
+                            <button type="button" class="timetable-second-dropdown">
+                                <span>2nd Year</span>
+                                <img src="" alt="dropdown icon">
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="timetable-options">
-                        <button type="button" class="timetable-first-dropdown">
-                            <span>Rain Semester 2025</span>
-                            <img src="" alt="dropdown icon">
-                        </button>
-                        <button type="button" class="timetable-second-dropdown">
-                            <span>2nd Year</span>
-                            <img src="" alt="dropdown icon">
-                        </button>
+                    <div class="timetable-toggle">
+                        <button type="button">Weekly Schedule</button>
+                        <button type="button">Course List</button>
+                        <button type="button">Exam Timetable</button>
                     </div>
                 </div>
 
-                <div class="timetable-toggle">
-                    <button type="button">Weekly Schedule</button>
-                    <button type="button">Course List</button>
-                    <button type="button">Exam Timetable</button>
+                <div>
+                    <h3>Weekly Class Schedule</h3>
+                    <p>1st Year - Rain Semester 2025</p>
+
+                    <div class="timetable-schedule">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Monday</th>
+                                    <th>Tuesday</th>
+                                    <th>Wednesday</th>
+                                    <th>Thursday</th>
+                                    <th>Friday</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>09:00-10:30</th>
+                                    <td>CSC201</td>
+                                    <td>CSC203</td>
+                                    <td>CSC201</td>
+                                    <td>CSC202</td>
+                                    <td>CSC204</td>
+                                </tr>
+                                <tr>
+                                    <th>11:00-12:30</th>
+                                    <td>CSC202</td>
+                                    <td>CSC204</td>
+                                    <td>CSC205</td>
+                                    <td>CSC203</td>
+                                    <td>CSC205</td>
+                                </tr>
+                                <tr>
+                                    <th>14:00-16:00</th>
+                                    <td>CSC301L</td>
+                                    <td>CSC302L</td>
+                                    <td>CSC303L</td>
+                                    <td>CSC301P</td>
+                                    <td>CSC302L</td>
+                                </tr>
+                                <tr>
+                                    <th>16:30-18:00</th>
+                                    <td>Free</td>
+                                    <td>Free</td>
+                                    <td>Free</td>
+                                    <td>Free</td>
+                                    <td>Free</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <h3>Weekly Class Schedule</h3>
-                <p>1st Year - Rain Semester 2025</p>
-
-                <div class="timetable-schedule">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Time</th>
-                                <th>Monday</th>
-                                <th>Tuesday</th>
-                                <th>Wednesday</th>
-                                <th>Thursday</th>
-                                <th>Friday</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>09:00-10:30</th>
-                                <td>CSC201</td>
-                                <td>CSC203</td>
-                                <td>CSC201</td>
-                                <td>CSC202</td>
-                                <td>CSC204</td>
-                            </tr>
-                            <tr>
-                                <th>11:00-12:30</th>
-                                <td>CSC202</td>
-                                <td>CSC204</td>
-                                <td>CSC205</td>
-                                <td>CSC203</td>
-                                <td>CSC205</td>
-                            </tr>
-                            <tr>
-                                <th>14:00-16:00</th>
-                                <td>CSC301L</td>
-                                <td>CSC302L</td>
-                                <td>CSC303L</td>
-                                <td>CSC301P</td>
-                                <td>CSC302L</td>
-                            </tr>
-                            <tr>
-                                <th>16:30-18:00</th>
-                                <td>Free</td>
-                                <td>Free</td>
-                                <td>Free</td>
-                                <td>Free</td>
-                                <td>Free</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="timetable-after">
+                <div>
+                    <span>8</span>
+                    <p>Total Courses</p>
+                </div>
+                <div>
+                    <span>18</span>
+                    <p>Credit Hours</p>
+                </div>
+                <div>
+                    <span>25</span>
+                    <p>Weekly Hours</p>
+                </div>
+                <div>
+                    <span>5</span>
+                    <p>Lab Sessions</p>
                 </div>
             </div>
-        </div>
 
-        <div class="timetable-after">
-            <div>
-                <span>8</span>
-                <p>Total Courses</p>
-            </div>
-            <div>
-                <span>18</span>
-                <p>Credit Hours</p>
-            </div>
-            <div>
-                <span>25</span>
-                <p>Weekly Hours</p>
-            </div>
-            <div>
-                <span>5</span>
-                <p>Lab Sessions</p>
-            </div>
-        </div>
+        </main>
 
-    </main>
+        <footer>
+            <p>&copy; 2025 G12Schools • School Information Board • All rights reserved.</p>
+        </footer>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 G12Schools • School Imformation Board • All rights reserved.</p>
-    </footer>
-    
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarActive = document.getElementById('sidebar-active');
+
+        menuIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        sidebarActive.classList.toggle('shift');
+        });
+
+        document.addEventListener('click', (e) => {
+        if (!sidebar.contains(e.target) && !menuIcon.contains(e.target)) {
+            sidebar.classList.remove('active');
+            sidebarActive.classList.remove('shift');
+        }
+        });
+
+    </script>
 </body>
 </html>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
         <div class="sidebar-top">
             <div class="sidebar-top-website-info">
                 <img src="assets/logo.jpg" alt="G12Schools logo">
@@ -42,36 +42,57 @@
         </div>
     </aside>
 
-    <header>
-        <div class="header-left">
-            <img src="assets/icons/menu.png" alt="menu icon">
-            <div class="header-left-department-info">
-                <img src="assets/logo.jpg" alt="G12 Logo">
-                <div>
-                    <h2>Computer Science Department</h2>
-                    <p>School of Information and Communication Technology</p>
+    <div class="sidebar-active" id="sidebar-active">
+        <header>
+            <div class="header-left">
+                <img src="assets/icons/menu.png" alt="menu icon" id="menu-icon">
+                <div class="header-left-department-info">
+                    <img src="assets/logo.jpg" alt="G12 Logo">
+                    <div>
+                        <h2>Computer Science Department</h2>
+                        <p>School of Information and Communication Technology</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="header-right">
-            <div class="header-search-bar-div">
-                <div class="header-search-icon">
-                    <img src="assets/icons/search.png" alt="search icon">
+            <div class="header-right">
+                <div class="header-search-bar-div">
+                    <div class="header-search-icon">
+                        <img src="assets/icons/search.png" alt="search icon">
+                    </div>
+                    <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
                 </div>
-                <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
+                
+                <div class="header-notification">
+                    <img src="assets/icons/notification.png" alt="notification icon">
+                    <div class="header-notification-ping"></div>
+                </div>
             </div>
-            
-            <div class="header-notification">
-                <img src="assets/icons/notification.png" alt="notification icon">
-                <div class="header-notification-ping"></div>
-            </div>
-        </div>
-    </header>
+        </header>
 
-    <footer>
-        <p>&copy; 2025 G12Schools • School Imformation Board • All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 G12Schools • School Imformation Board • All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarActive = document.getElementById('sidebar-active');
+
+        menuIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        sidebarActive.classList.toggle('shift');
+        });
+
+        document.addEventListener('click', (e) => {
+        if (!sidebar.contains(e.target) && !menuIcon.contains(e.target)) {
+            sidebar.classList.remove('active');
+            sidebarActive.classList.remove('shift');
+        }
+        });
+
+    </script>
     
 </body>
 </html>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/results.css">
 </head>
 <body>
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
         <div class="sidebar-top">
             <div class="sidebar-top-website-info">
                 <img src="assets/logo.jpg" alt="G12Schools logo">
@@ -42,156 +42,176 @@
         </div>
     </aside>
 
-    <header>
-        <div class="header-left">
-            <img src="assets/icons/menu.png" alt="menu icon">
-            <div class="header-left-department-info">
-                <img src="assets/logo.jpg" alt="G12 Logo">
-                <div>
-                    <h2>Computer Science Department</h2>
-                    <p>School of Information and Communication Technology</p>
+    <div class="sidebar-active" id="sidebar-active">
+        <header>
+            <div class="header-left">
+                <img src="assets/icons/menu.png" alt="menu icon" id="menu-icon">
+                <div class="header-left-department-info">
+                    <img src="assets/logo.jpg" alt="G12 Logo">
+                    <div>
+                        <h2>Computer Science Department</h2>
+                        <p>School of Information and Communication Technology</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="header-right">
-            <div class="header-search-bar-div">
-                <div class="header-search-icon">
-                    <img src="assets/icons/search.png" alt="search icon">
+            <div class="header-right">
+                <div class="header-search-bar-div">
+                    <div class="header-search-icon">
+                        <img src="assets/icons/search.png" alt="search icon">
+                    </div>
+                    <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
                 </div>
-                <input class="search-bar" type="text" placeholder="Search announcements, events..." value>
+                
+                <div class="header-notification">
+                    <img src="assets/icons/notification.png" alt="notification icon">
+                    <div class="header-notification-ping"></div>
+                </div>
             </div>
-            
-            <div class="header-notification">
-                <img src="assets/icons/notification.png" alt="notification icon">
-                <div class="header-notification-ping"></div>
+        </header>
+
+        <main>
+            <div class="results-details">
+                <div class="results-head">
+                    <img src="" alt="results icon">
+                    <h3>Examination Results</h3>
+                </div>
+                <p>View and download examination results, assignments, and quiz scores</p>
             </div>
-        </div>
-    </header>
 
-    <main>
-        <div class="results-details">
-            <div class="results-head">
-                <img src="" alt="results icon">
-                <h3>Examination Results</h3>
+            <div class="results-menu">
+                <button type="button">All Semesters</button>
+                <button type="button">All Types</button>
+                <button type="button">Published</button>
             </div>
-            <p>View and download examination results, assignments, and quiz scores</p>
-        </div>
 
-        <div class="results-menu">
-            <button type="button">All Semesters</button>
-            <button type="button">All Types</button>
-            <button type="button">Published</button>
-        </div>
+            <div class="results-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Exam/Assignment</th>
+                            <th>Subject</th>
+                            <th>Type</th>
+                            <th>Exam Date</th>
+                            <th>Published Date</th>
+                            <th>Stdents</th>
+                            <th>Average</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Software Engineering Mid-Term Examination</td>
+                            <td>Software Engineering</td>
+                            <td>
+                                <button>Midterm</button>
+                            </td>
+                            <td>8/18/2025</td>
+                            <td>8/30/2025</td>
+                            <td>67</td>
+                            <td>79.4%</td>
+                            <td><button>Published</button></td>
+                            <td>
+                                <button><img src="" alt="eye icon"></button>
+                                <button><img src="" alt="download icon"></button>
+                            </td>
+                        </tr>
 
-        <div class="results-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Exam/Assignment</th>
-                        <th>Subject</th>
-                        <th>Type</th>
-                        <th>Exam Date</th>
-                        <th>Published Date</th>
-                        <th>Stdents</th>
-                        <th>Average</th>
-                        <th>Status</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Software Engineering Mid-Term Examination</td>
-                        <td>Software Engineering</td>
-                        <td>
-                            <button>Midterm</button>
-                        </td>
-                        <td>8/18/2025</td>
-                        <td>8/30/2025</td>
-                        <td>67</td>
-                        <td>79.4%</td>
-                        <td><button>Published</button></td>
-                        <td>
-                            <button><img src="" alt="eye icon"></button>
-                            <button><img src="" alt="download icon"></button>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>Software Engineering Mid-Term Examination</td>
+                            <td>Software Engineering</td>
+                            <td>
+                                <button>Midterm</button>
+                            </td>
+                            <td>8/18/2025</td>
+                            <td>8/30/2025</td>
+                            <td>67</td>
+                            <td>79.4%</td>
+                            <td><button>Published</button></td>
+                            <td>
+                                <button><img src="" alt="eye icon"></button>
+                                <button><img src="" alt="download icon"></button>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>Software Engineering Mid-Term Examination</td>
-                        <td>Software Engineering</td>
-                        <td>
-                            <button>Midterm</button>
-                        </td>
-                        <td>8/18/2025</td>
-                        <td>8/30/2025</td>
-                        <td>67</td>
-                        <td>79.4%</td>
-                        <td><button>Published</button></td>
-                        <td>
-                            <button><img src="" alt="eye icon"></button>
-                            <button><img src="" alt="download icon"></button>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>Software Engineering Mid-Term Examination</td>
+                            <td>Software Engineering</td>
+                            <td>
+                                <button>Midterm</button>
+                            </td>
+                            <td>8/18/2025</td>
+                            <td>8/30/2025</td>
+                            <td>67</td>
+                            <td>79.4%</td>
+                            <td><button>Published</button></td>
+                            <td>
+                                <button><img src="" alt="eye icon"></button>
+                                <button><img src="" alt="download icon"></button>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>Software Engineering Mid-Term Examination</td>
-                        <td>Software Engineering</td>
-                        <td>
-                            <button>Midterm</button>
-                        </td>
-                        <td>8/18/2025</td>
-                        <td>8/30/2025</td>
-                        <td>67</td>
-                        <td>79.4%</td>
-                        <td><button>Published</button></td>
-                        <td>
-                            <button><img src="" alt="eye icon"></button>
-                            <button><img src="" alt="download icon"></button>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>Software Engineering Mid-Term Examination</td>
+                            <td>Software Engineering</td>
+                            <td>
+                                <button>Midterm</button>
+                            </td>
+                            <td>8/18/2025</td>
+                            <td>8/30/2025</td>
+                            <td>67</td>
+                            <td>79.4%</td>
+                            <td><button>Published</button></td>
+                            <td>
+                                <button><img src="" alt="eye icon"></button>
+                                <button><img src="" alt="download icon"></button>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>Software Engineering Mid-Term Examination</td>
-                        <td>Software Engineering</td>
-                        <td>
-                            <button>Midterm</button>
-                        </td>
-                        <td>8/18/2025</td>
-                        <td>8/30/2025</td>
-                        <td>67</td>
-                        <td>79.4%</td>
-                        <td><button>Published</button></td>
-                        <td>
-                            <button><img src="" alt="eye icon"></button>
-                            <button><img src="" alt="download icon"></button>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>Software Engineering Mid-Term Examination</td>
+                            <td>Software Engineering</td>
+                            <td>
+                                <button>Midterm</button>
+                            </td>
+                            <td>8/18/2025</td>
+                            <td>8/30/2025</td>
+                            <td>67</td>
+                            <td>79.4%</td>
+                            <td><button>Published</button></td>
+                            <td>
+                                <button><img src="" alt="eye icon"></button>
+                                <button><img src="" alt="download icon"></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
 
-                    <tr>
-                        <td>Software Engineering Mid-Term Examination</td>
-                        <td>Software Engineering</td>
-                        <td>
-                            <button>Midterm</button>
-                        </td>
-                        <td>8/18/2025</td>
-                        <td>8/30/2025</td>
-                        <td>67</td>
-                        <td>79.4%</td>
-                        <td><button>Published</button></td>
-                        <td>
-                            <button><img src="" alt="eye icon"></button>
-                            <button><img src="" alt="download icon"></button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 G12Schools • School Imformation Board • All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 G12Schools • School Information Board • All rights reserved.</p>
+        </footer>
+    </div>
     
+        <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarActive = document.getElementById('sidebar-active');
+
+        menuIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        sidebarActive.classList.toggle('shift');
+        });
+
+        document.addEventListener('click', (e) => {
+        if (!sidebar.contains(e.target) && !menuIcon.contains(e.target)) {
+            sidebar.classList.remove('active');
+            sidebarActive.classList.remove('shift');
+        }
+        });
+
+    </script>
 </body>
 </html>
