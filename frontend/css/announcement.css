@@ -1,0 +1,106 @@
+.announcement-page {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1em;
+}
+
+.main-announcement-description {
+    padding-bottom: 10px;
+}
+
+.main-announcement-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.main-announcement-head img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.main-announcement-filter {
+    margin: 1em 0;
+    display: flex;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-announcement-filter button {
+    border: none;
+    border-radius: 7px;
+    width: 200px;
+    height: 36px;
+    margin-right: 10px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-announcement-filter img {
+    width: 13px;
+    height: 13px;
+}
+
+.main-announcement-div {
+
+}
+
+.main-announcement {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1em;
+    margin-bottom: 20px;
+}
+
+.announcement-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.announcement-title div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.announcement-title p {
+    background-color: #d4183d;
+    color: white;
+    padding: 2.5px 9px;
+    border-radius: 8px;
+    font-size: 0.8em;
+}
+
+.announcement-message {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    color: gray;
+}
+
+.announcement-details {
+    color: gray;
+    font-size: 0.75em;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.announcement-details div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.announcement-details p {
+    border: 1px solid #ddd;
+    padding: 2px 4px;
+    border-radius: 6%;
+}
+
+
