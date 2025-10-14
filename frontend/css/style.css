@@ -1,0 +1,243 @@
+p {
+    margin: 0;
+    color: rgb(30, 30, 30);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px;
+    border-bottom: 1px solid #0000001a;
+    color: #0a0a0a;
+    font-size: 0.875em;
+    height: 5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-left {
+    width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.header-left-department-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 21px;
+}
+
+.header-left-department-info img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    border-radius: 12px;
+}
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.header-search-bar-div {
+    display: flex;
+}
+
+.header-search-bar-div div {
+    background-color: rgb(220, 220, 220);
+    padding: 6px 5px 0 5px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.header-search-bar-div img {
+    width: 15px;
+    height: 15px;
+}
+
+.header-search-bar-div input {
+    height: 27px;
+    width: 270px;
+    border: 0;
+    background-color: rgb(220, 220, 220);
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    font-size: 11px;
+    transition: width 0.2s ease;
+    outline: none;
+}
+
+.header-search-bar-div input:focus {
+    height: 30px;
+    width: 320px;
+}
+
+.header-notification img {
+    width: 18px;
+    height: 18px;
+    padding-top: 5px;
+    padding-left: 7px;
+}
+
+.header-notification {
+    position: relative;
+}
+
+.header-notification-ping {
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    background-color: red;
+    width: 7px;
+    height: 7px;
+    border-radius: 5px;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 226px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #0000001a;
+    padding: 0.5em;
+    font-size: 12px;
+    z-index: 200;
+}
+
+.sidebar-top {
+    padding: 18px 18px 13px 18px;
+    border-bottom: 1px solid #0000001a;
+}
+
+.sidebar-top-website-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sidebar-top-website-info img {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    border-radius: 12px;
+}
+
+.sidebar-top-online-status {
+    margin: 7px 0 0 0;
+    color: rgb(0, 166, 62);
+}
+
+.sidebar-middle {
+    border-bottom: 1px solid #0000001a;
+    padding: 5px 0 10px 0;
+}
+
+.sidebar-middle ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-middle ul img {
+    padding: 0 5px 0 0;
+    width: 16px;
+    height: 16px;
+}
+
+.sidebar-middle ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.sidebar-middle ul li {
+    margin-bottom: 3px;
+    padding: 0 5px;
+}
+
+.sidebar-middle ul li:hover {
+    background-color: rgba(62, 252, 131, 0.1);
+    border-radius: 5px;
+}
+
+.sidebar-middle ul li:focus {
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+.sidebar-bottom {
+    padding: 10px 0 0 0;
+}
+
+.sidebar-bottom ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-bottom ul img {
+    padding: 0 5px 0 0;
+    width: 16px;
+    height: 16px;
+}
+
+.sidebar-bottom ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.sidebar-bottom ul li {
+    margin-bottom: 3px;
+    padding: 0 5px;
+}
+
+.sidebar-bottom ul li:hover {
+    background-color: rgba(62, 252, 131, 0.1);
+    border-radius: 5px;
+}
+
+.sidebar-bottom ul li:focus {
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+
+
+/* Main */
+main {
+    margin-top: 7em;
+}
