@@ -237,6 +237,25 @@ header {
 
 
 
+/* Footer */
+footer {
+    height: 2em;
+    background-color: #f8f9fa;
+    padding: 1em;
+    text-align: center;
+    border-top: 1px solid #0000001a;
+    margin: 0;
+    
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #666;
+}
+
+
+
 /* Main */
 main {
     margin-top: 7em;
