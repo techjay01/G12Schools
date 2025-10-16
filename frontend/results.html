@@ -35,8 +35,6 @@
 
         <div class="sidebar-bottom">
             <ul>
-                <li><a href="admin.html"><img src="assets/icons/admin.png" alt="admin icon">Admin Panel</a></li>
-                <li><a href="index.html"><img src="assets/icons/login.png" alt="login icon">Logout Admin</a></li>
                 <li><a href="login.html"><img src="assets/icons/login.png" alt="login icon">Admin Login</a></li>
             </ul>
         </div>
@@ -64,129 +62,133 @@
                 </div>
                 
                 <div class="header-notification">
-                    <img src="assets/icons/notification.png" alt="notification icon">
-                    <div class="header-notification-ping"></div>
+                    <a href="announcement.html">
+                        <img src="assets/icons/notification.png" alt="notification icon">
+                        <div class="header-notification-ping"></div>
+                    </a>
                 </div>
             </div>
         </header>
 
         <main>
-            <div class="results-details">
-                <div class="results-head">
-                    <img src="" alt="results icon">
-                    <h3>Examination Results</h3>
+            <div class="results-page">
+                <div class="results-details">
+                    <div class="results-head">
+                        <img src="assets/icons/result.png" alt="results icon">
+                        <h3>Examination Results</h3>
+                    </div>
+                    <p>View and download examination results, assignments, and quiz scores</p>
                 </div>
-                <p>View and download examination results, assignments, and quiz scores</p>
-            </div>
 
-            <div class="results-menu">
-                <button type="button">All Semesters</button>
-                <button type="button">All Types</button>
-                <button type="button">Published</button>
-            </div>
+                <div class="results-menu">
+                    <button type="button">
+                        <div>All Semesters</div>
+                        <img src="assets/icons/dropdown.png" alt="dropdown icon">
+                    </button>
+                    <button type="button">
+                        <div>All Types</div>
+                        <img src="assets/icons/dropdown.png" alt="dropdown icon">
+                    </button>
+                    <button type="button">
+                        <div>Published</div>
+                        <img src="assets/icons/dropdown.png" alt="dropdown icon">
+                    </button>
+                </div>
 
-            <div class="results-table">
-                <table>
-                    <thead>
+                <div class="results-table">
+                    <table>
+                        <thead>
                         <tr>
                             <th>Exam/Assignment</th>
                             <th>Subject</th>
                             <th>Type</th>
                             <th>Exam Date</th>
                             <th>Published Date</th>
-                            <th>Stdents</th>
+                            <th>Students</th>
                             <th>Average</th>
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+
+                        <tbody>
                         <tr>
                             <td>Software Engineering Mid-Term Examination</td>
                             <td>Software Engineering</td>
-                            <td>
-                                <button>Midterm</button>
-                            </td>
+                            <td><span class="type midterm">Midterm</span></td>
                             <td>8/18/2025</td>
                             <td>8/30/2025</td>
                             <td>67</td>
                             <td>79.4%</td>
-                            <td><button>Published</button></td>
-                            <td>
-                                <button><img src="" alt="eye icon"></button>
-                                <button><img src="" alt="download icon"></button>
+                            <td><span class="status published">Published</span></td>
+                            <td class="actions">
+                            <button class="view"><img src="assets/icons/eye.png" alt="eye icon"></button>
+                            <button class="download"><img src="assets/icons/download.png" alt="download icon"></button>
                             </td>
                         </tr>
 
                         <tr>
-                            <td>Software Engineering Mid-Term Examination</td>
-                            <td>Software Engineering</td>
-                            <td>
-                                <button>Midterm</button>
-                            </td>
-                            <td>8/18/2025</td>
-                            <td>8/30/2025</td>
-                            <td>67</td>
-                            <td>79.4%</td>
-                            <td><button>Published</button></td>
-                            <td>
-                                <button><img src="" alt="eye icon"></button>
-                                <button><img src="" alt="download icon"></button>
+                            <td>Database Management Systems Final Exam</td>
+                            <td>Database Management Systems</td>
+                            <td><span class="type final">Final</span></td>
+                            <td>8/20/2025</td>
+                            <td>8/28/2025</td>
+                            <td>95</td>
+                            <td>82.3%</td>
+                            <td><span class="status published">Published</span></td>
+                            <td class="actions">
+                            <button class="view"><img src="assets/icons/eye.png" alt="eye icon"></button>
+                            <button class="download"><img src="assets/icons/download.png" alt="download icon"></button>
                             </td>
                         </tr>
 
                         <tr>
-                            <td>Software Engineering Mid-Term Examination</td>
-                            <td>Software Engineering</td>
-                            <td>
-                                <button>Midterm</button>
-                            </td>
-                            <td>8/18/2025</td>
-                            <td>8/30/2025</td>
-                            <td>67</td>
-                            <td>79.4%</td>
-                            <td><button>Published</button></td>
-                            <td>
-                                <button><img src="" alt="eye icon"></button>
-                                <button><img src="" alt="download icon"></button>
+                            <td>Data Structures Mid-Term Examination</td>
+                            <td>Data Structures and Algorithms</td>
+                            <td><span class="type midterm">Midterm</span></td>
+                            <td>8/15/2025</td>
+                            <td>8/25/2025</td>
+                            <td>89</td>
+                            <td>76.5%</td>
+                            <td><span class="status published">Published</span></td>
+                            <td class="actions">
+                            <button class="view"><img src="assets/icons/eye.png" alt="eye icon"></button>
+                            <button class="download"><img src="assets/icons/download.png" alt="download icon"></button>
                             </td>
                         </tr>
 
                         <tr>
-                            <td>Software Engineering Mid-Term Examination</td>
-                            <td>Software Engineering</td>
-                            <td>
-                                <button>Midterm</button>
-                            </td>
-                            <td>8/18/2025</td>
-                            <td>8/30/2025</td>
-                            <td>67</td>
-                            <td>79.4%</td>
-                            <td><button>Published</button></td>
-                            <td>
-                                <button><img src="" alt="eye icon"></button>
-                                <button><img src="" alt="download icon"></button>
+                            <td>OOP Assignment 3</td>
+                            <td>Object-Oriented Programming</td>
+                            <td><span class="type assignment">Assignment</span></td>
+                            <td>8/10/2025</td>
+                            <td>8/20/2025</td>
+                            <td>102</td>
+                            <td>88.7%</td>
+                            <td><span class="status published">Published</span></td>
+                            <td class="actions">
+                            <button class="view"><img src="assets/icons/eye.png" alt="eye icon"></button>
+                            <button class="download"><img src="assets/icons/download.png" alt="download icon"></button>
                             </td>
                         </tr>
 
                         <tr>
-                            <td>Software Engineering Mid-Term Examination</td>
-                            <td>Software Engineering</td>
-                            <td>
-                                <button>Midterm</button>
-                            </td>
+                            <td>Computer Networks Quiz 2</td>
+                            <td>Computer Networks</td>
+                            <td><span class="type quiz">Quiz</span></td>
+                            <td>8/12/2025</td>
                             <td>8/18/2025</td>
-                            <td>8/30/2025</td>
-                            <td>67</td>
-                            <td>79.4%</td>
-                            <td><button>Published</button></td>
-                            <td>
-                                <button><img src="" alt="eye icon"></button>
-                                <button><img src="" alt="download icon"></button>
+                            <td>78</td>
+                            <td>74.2%</td>
+                            <td><span class="status published">Published</span></td>
+                            <td class="actions">
+                            <button class="view"><img src="assets/icons/eye.png" alt="eye icon"></button>
+                            <button class="download"><img src="assets/icons/download.png" alt="download icon"></button>
                             </td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </main>
 

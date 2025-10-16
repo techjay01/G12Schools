@@ -1,0 +1,227 @@
+.admin-container {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.2em 1.2em;
+}
+
+.admin-panel-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.admin-panel-head h4 {
+    padding-bottom: 1.5px;
+}
+
+.admin-un img,
+.admin-dos img {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 7px;
+}
+
+.admin-dos img {
+    margin-right: 12px;
+}
+
+.admin-un p {
+    font-size: 0.8em;
+}
+
+.admin-dos {
+    margin: 1.2em 0 1.5em;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    background: #ddd;
+    overflow: hidden;
+    width: 90% auto;
+}
+
+.admin-dos button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0.7em 1em;
+    cursor: pointer;
+}
+
+.admin-dos button:focus {
+    background: #f0f0f0;
+    border-radius: 7px;
+    margin: 3px;
+}
+
+.admin-trois h4 {
+    font-size: 1em;
+    margin-bottom: 6px;
+}
+
+.admin-trois p {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 1em;
+}
+
+.admin-quatre {
+    display: flex;
+    gap: 12px;
+    margin: 1.2em 0;
+}
+
+.admin-dashbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #16aa4c;
+    background: #f0fdf5;
+    border-radius: 12px;
+    padding: 1em 1em 1.2em;
+}
+
+.admin-dashbox img {
+    width: 1.8em;
+    height: 1.8em;
+    margin-bottom: 6px;
+}
+
+.admin-dashbox span {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #16aa4c;
+}
+
+.admin-dashbox p {
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.admin-cinq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.admin-dashbox-2 {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.admin-dashbox-2 h4 {
+    font-size: 0.875em;
+    margin-bottom: 1.5em;
+}
+
+.admin-dashbox-2 p {
+    font-size: 12px;
+}
+
+.admin-quick-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 1em;
+}
+
+.first-div,
+.second-div,
+.third-div {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    padding: 0.5em 0.8em;
+    cursor: pointer;
+}
+
+.first-div {
+    background-color: black;
+    border-radius: 6px;
+}
+
+.first-div p {
+    color: white;
+}
+
+.second-div,
+.third-div {
+    border: 1px solid #f0f0f0;
+    border-radius: 6px;
+}
+
+.second-div p,
+.third-div p {
+    color: black;
+}
+
+.admin-quick-actions img {
+    width: 1em;
+    height: 1em;
+}
+
+.activity {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.green-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #16aa4c;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.bold-text {
+    font-weight: bold;
+    margin: 0;
+}
+
+.system-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.system-stats p {
+    font-size: 14px;
+}
+
+.database-status,
+.email-status,
+.backup-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.database-status div,
+.email-status div {
+    font-size: 12px;
+    background: #d1ffe2;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+
+.backup-status div {
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+

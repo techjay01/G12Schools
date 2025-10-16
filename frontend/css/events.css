@@ -1,0 +1,138 @@
+.event-calendar-container {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1em;
+}
+
+.event-calendar-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.event-calendar-title {
+    display: flex;
+    align-items: center;
+}
+
+.event-calendar-title img {
+    width: 1em;
+    height: 1em;
+    margin-right: 6px;
+}
+
+.event-calendar-details p {
+    font-size: 0.8em;
+    color: gray;
+    margin-top: 2px;
+}
+
+.event-month-list-toggle {
+    border: none;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.event-month-list-toggle button {
+    background: none;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.event-month-list-toggle button:focus {
+    background: #f0f0f0;
+    border-radius: 7px;
+    margin: 3px;
+}
+
+
+.calendar-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #0000001a;
+  padding: 20px;
+  margin-top: 1em;
+  width: 90% auto;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calendar-header img {
+    width: 15px;
+    height: 15px;
+}
+
+.calendar-header button:hover {
+  background-color: #d2d2d2;
+}
+
+#month-year {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.day {
+  height: 80px;
+  border-radius: 6px;
+  padding: 0.5em;
+  text-align: center;
+  position: relative;
+  transition: background-color 0.2s;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #ddd;
+}
+
+.day:hover {
+  background-color: #f0f0f0;
+}
+
+.day.today {
+  background-color: #00800026;
+  border: 2px solid #008000;
+}
+
+.event {
+  background-color: #008000;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 2px 4px;
+  position: absolute;
+  bottom: 5px;
+  width: 6em;
+  white-space: nowrap;
+  cursor: pointer;
+}
+

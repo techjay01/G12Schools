@@ -4,31 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G12Schools</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <div>
-        <div>
-            <img src="" alt="admin icon">
-            <h3>Admin Login</h3>
-        </div>
-        <p>Enter your credentials to access administrative features</p>
+    <div class="container">
+        <div class="login-form-div">
+            <div class="close-button">x</div>
+            <div class="login-head">
+                <img src="assets/icons/admin.png" alt="admin icon">
+                <h3>Admin Login</h3>
+            </div>
+            <div class="admin-login-request">Enter your credentials to access administrative features</div>
 
-        <form action="" class="login-form">
-            <label for="username">Username</label>
-            <input type="username" placeholder="Enter username" required>
+            <form id="loginForm" class="login-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
 
-            <label for="password">Password</label>
-            <input id="password" type="password" placeholder="Enter password" required />
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Enter password" required />
 
-            <button type="submit"><a href="admin.html">Login to Admin Portal</a></button>
-        </form>
+                <button type="submit">→] Login to Admin Portal</button>
 
-        <div class="demo-details">
-            <h3>Demo credentials</h3>
-            <p>Username: admin</p>
-            <p>Password: admin</p>
+                <p id="errorMsg" class="error-message"></p>
+            </form>
+
+            <div class="demo-details">
+                <h4>Demo credentials</h4>
+                <p>Username: admin</p>
+                <p>Password: admin</p>
+            </div>
         </div>
     </div>
-    
+
+    <script>
+        document.querySelector(".close-button").addEventListener("click", () => {
+            window.location.href = "index.html"; // redirects to homepage when 'x' is clicked
+        });
+
+        const form = document.getElementById("loginForm");
+        const errorMsg = document.getElementById("errorMsg");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            if (username === "admin" && password === "admin") {
+            // ✅ Correct credentials
+            window.location.href = "admin.html";
+            } else {
+            // ❌ Wrong credentials
+            errorMsg.textContent = "Invalid username or password";
+            errorMsg.style.display = "block";
+
+            const formDiv = document.querySelector(".login-form-div");
+            formDiv.classList.add("shake");
+            setTimeout(() => formDiv.classList.remove("shake"), 400);
+            }
+        });
+    </script>
+
+
 </body>
 </html>

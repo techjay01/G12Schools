@@ -1,0 +1,162 @@
+.timetable-div {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1em;
+}
+
+.timetable-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timetable-title {
+    display: flex;
+    align-items: center;
+}
+
+.timetable-title img {
+    width: 1.1em;
+    height: 1.1em;
+    margin-right: 3px;
+}
+
+.timetable-title-details {
+    font-size: medium    ;
+}
+
+.timetable-options {
+    display: flex;
+    gap: 10px;
+}
+
+.timetable-options button {
+    border: none;
+    border-radius: 7px;
+    width: 180px;
+    height: 32px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.timetable-options img {
+    width: 13px;
+    height: 13px;
+}
+
+.timetable-toggle {
+    border: none;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: fit-content;
+    margin: 1.5em 0 0.5em 0;
+}
+
+.timetable-toggle button {
+    background: none;
+    border: none;
+    padding: 0.7em 1em;
+    cursor: pointer;
+}
+
+.timetable-toggle button:focus {
+    background: #f0f0f0;
+    border-radius: 7px;
+    margin: 3px;
+}
+
+
+.timetable-schedule-div p {
+    font-size: 14px;
+    margin: 0.6em 0;
+}
+
+.timetable-schedule-div h4 {
+    font-size: 14px;
+}
+
+.timetable {
+  margin: 1em auto;
+  overflow-x: scroll;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: #f9fafb;
+}
+
+th, td {
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  padding: 10px;
+  vertical-align: top;
+}
+
+th {
+  background-color: #f3f4f6;
+  font-weight: bold;
+}
+
+.class {
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.class.lecture {
+  background-color: #d3fdde;
+}
+
+.class.lab {
+  background-color: #d3fdde;
+}
+
+
+.free {
+  color: #999;
+  font-style: italic;
+  background-color: #f9fafb;
+}
+
+
+
+
+.timetable-after {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 1em 0;
+    padding-bottom: 1em;
+}
+
+.timetable-after div {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 4.6em;
+}
+
+.timetable-after p {
+    font-size: 11px;
+    color: #6a7282;
+}
+
+.timetable-after span {
+    font-size: 21px;
+    font-weight: bold;
+    color: #00a63e;
+}

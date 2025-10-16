@@ -1,0 +1,151 @@
+.archive-div {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1em;
+}
+
+.results-details {
+    padding-bottom: 10px;
+}
+
+.archive-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.archive-head img {
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+}
+
+.archive-menu {
+    margin: 1em 0;
+    display: flex;
+    padding-bottom: 22px;
+}
+
+.archive-menu button {
+    border: none;
+    border-radius: 7px;
+    width: 200px;
+    height: 36px;
+    margin-right: 10px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.archive-menu img {
+    width: 13px;
+    height: 13px;
+}
+
+
+/* Table styling */
+.archive-table {
+    overflow-x: scroll;
+}
+
+table {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);   
+}
+
+thead {
+  background-color: #f9fafb;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+th {
+  font-weight: bold;
+  color: #333;
+}
+
+td {
+  color: #555;
+}
+
+/* Type tags */
+.type {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: #555;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+
+/* Action buttons */
+.actions {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  border-color: #d6d6d6;
+  background: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.actions button:hover {
+  background-color: #eaeaea;
+}
+
+
+/* Optional hover effect for rows */
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+
+
+
+.archive-after {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 1em 0;
+    padding-bottom: 1em;
+}
+
+.archive-after div {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 4.6em;
+}
+
+.archive-after p {
+    font-size: 11px;
+    color: #6a7282;
+}
+
+.archive-after span {
+    font-size: 21px;
+    font-weight: bold;
+    color: #00a63e;
+}

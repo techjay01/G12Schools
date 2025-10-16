@@ -35,8 +35,6 @@
 
         <div class="sidebar-bottom">
             <ul>
-                <li><a href="admin.html"><img src="assets/icons/admin.png" alt="admin icon">Admin Panel</a></li>
-                <li><a href="index.html"><img src="assets/icons/login.png" alt="login icon">Logout Admin</a></li>
                 <li><a href="login.html"><img src="assets/icons/login.png" alt="login icon">Admin Login</a></li>
             </ul>
         </div>
@@ -64,8 +62,10 @@
                 </div>
                 
                 <div class="header-notification">
-                    <img src="assets/icons/notification.png" alt="notification icon">
-                    <div class="header-notification-ping"></div>
+                    <a href="announcement.html">
+                        <img src="assets/icons/notification.png" alt="notification icon">
+                        <div class="header-notification-ping"></div>
+                    </a>
                 </div>
             </div>
         </header>
@@ -76,20 +76,21 @@
                     <div class="timetable-head">
                         <div class="timetable-title-details">
                             <div class="timetable-title">
-                                <img src="" alt="events icon">
-                                <h3>Class Timetable</h3>
+                                <img src="assets/icons/calendar.png" alt="events icon">
+                                <h4>Class Timetable</h4>
                             </div>
                             <p>Weekly class schedule and course information</p>
                         </div>
 
                         <div class="timetable-options">
-                            <button type="button" class="timetable-first-dropdown">
-                                <span>Rain Semester 2025</span>
-                                <img src="" alt="dropdown icon">
+                            <button type="button">
+                                <div>Rain Semester 2025</div>
+                                <img src="assets/icons/dropdown.png" alt="dropdown icon">
                             </button>
-                            <button type="button" class="timetable-second-dropdown">
-                                <span>2nd Year</span>
-                                <img src="" alt="dropdown icon">
+                            
+                            <button type="button">
+                                <div>2nd Year</div>
+                                <img src="assets/icons/dropdown.png" alt="dropdown icon">
                             </button>
                         </div>
                     </div>
@@ -101,58 +102,163 @@
                     </div>
                 </div>
 
-                <div>
-                    <h3>Weekly Class Schedule</h3>
+                <div class="timetable-schedule-div">
+                    <h4>Weekly Class Schedule</h4>
                     <p>1st Year - Rain Semester 2025</p>
 
-                    <div class="timetable-schedule">
+                    <section class="timetable">
                         <table>
                             <thead>
-                                <tr>
-                                    <th>Time</th>
-                                    <th>Monday</th>
-                                    <th>Tuesday</th>
-                                    <th>Wednesday</th>
-                                    <th>Thursday</th>
-                                    <th>Friday</th>
-                                </tr>
+                            <tr>
+                                <th>Time</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th>09:00-10:30</th>
-                                    <td>CSC201</td>
-                                    <td>CSC203</td>
-                                    <td>CSC201</td>
-                                    <td>CSC202</td>
-                                    <td>CSC204</td>
-                                </tr>
-                                <tr>
-                                    <th>11:00-12:30</th>
-                                    <td>CSC202</td>
-                                    <td>CSC204</td>
-                                    <td>CSC205</td>
-                                    <td>CSC203</td>
-                                    <td>CSC205</td>
-                                </tr>
-                                <tr>
-                                    <th>14:00-16:00</th>
-                                    <td>CSC301L</td>
-                                    <td>CSC302L</td>
-                                    <td>CSC303L</td>
-                                    <td>CSC301P</td>
-                                    <td>CSC302L</td>
-                                </tr>
-                                <tr>
-                                    <th>16:30-18:00</th>
-                                    <td>Free</td>
-                                    <td>Free</td>
-                                    <td>Free</td>
-                                    <td>Free</td>
-                                    <td>Free</td>
-                                </tr>
+                            <tr>
+                                <td>09:00 - 10:30</td>
+                                <td>
+                                <div class="class lecture">
+                                    <strong>CSC201</strong><br>
+                                    Data Structures and Algorithms<br>
+                                    📍 Room 101<br>
+                                    👨‍🏫 Mr. Martin
+                                </div>
+                                </td>
+                                <td>
+                                <div class="class lecture">
+                                    <strong>CSC203</strong><br>
+                                    Object Oriented Programming<br>
+                                    📍 Room 103<br>
+                                    👨‍🏫 Dr. Donatus
+                                </div>
+                                </td>
+                                <td>
+                                <div class="class lecture">
+                                    <strong>CSC201</strong><br>
+                                    Data Structures and Algorithms<br>
+                                    📍 Room 101<br>
+                                    👨‍🏫 Mr. Martin
+                                </div>
+                                </td>
+                                <td>
+                                <div class="class lecture">
+                                    <strong>CSC202</strong><br>
+                                    Database Management Systems<br>
+                                    📍 Room 102<br>
+                                    👨‍🏫 Dr. Ayogu
+                                </div>
+                                </td>
+                                <td>
+                                <div class="class lecture">
+                                    <strong>CSC204</strong><br>
+                                    Computer Networks<br>
+                                    📍 Room 104<br>
+                                    👨‍🏫 Mr. Douglas Kelechi
+                                </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>11:00 - 12:30</td>
+                                <td>
+                                <div class="class lecture">
+                                    <strong>CSC202</strong><br>
+                                    Database Management Systems<br>
+                                    📍 Room 102<br>
+                                    👨‍🏫 Dr. Ayogu
+                                </div>
+                                </td>
+                                <td>
+                                <div class="class lecture">
+                                    <strong>CSC204</strong><br>
+                                    Computer Networks<br>
+                                    📍 Room 104<br>
+                                    👨‍🏫 Mr. Douglas Kelechi
+                                </div>
+                                </td>
+                                <td>
+                                <div class="class lecture">
+                                    <strong>CSC205</strong><br>
+                                    Software Engineering<br>
+                                    📍 Room 105<br>
+                                    👩‍🏫 Miss Felicity
+                                </div>
+                                </td>
+                                <td>
+                                <div class="class lecture">
+                                    <strong>CSC203</strong><br>
+                                    Object Oriented Programming<br>
+                                    📍 Room 103<br>
+                                    👨‍🏫 Dr. Donatus
+                                </div>
+                                </td>
+                                <td>
+                                <div class="class lecture">
+                                    <strong>CSC205</strong><br>
+                                    Software Engineering<br>
+                                    📍 Room 105<br>
+                                    👩‍🏫 Miss Felicity
+                                </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>14:00 - 16:00</td>
+                                <td>
+                                <div class="class lab">
+                                    <strong>CSC301L</strong><br>
+                                    Data Structures Lab<br>
+                                    🧪 Lab A<br>
+                                    👨‍🏫 TA: John Smith
+                                </div>
+                                </td>
+                                <td>
+                                <div class="class lab">
+                                    <strong>CSC302L</strong><br>
+                                    Database Lab<br>
+                                    🧪 Lab B<br>
+                                    👩‍🏫 TA: Lisa Chen
+                                </div>
+                                </td>
+                                <td>
+                                <div class="class lab">
+                                    <strong>CSC303L</strong><br>
+                                    OOP Lab<br>
+                                    🧪 Lab C<br>
+                                    👨‍🏫 TA: Mike Johnson
+                                </div>
+                                </td>
+                                <td>
+                                <div class="class lab">
+                                    <strong>CSC301L</strong><br>
+                                    Data Structures Lab<br>
+                                    🧪 Lab A<br>
+                                    👨‍🏫 TA: John Smith
+                                </div>
+                                </td>
+                                <td>
+                                <div class="class lab">
+                                    <strong>CSC302L</strong><br>
+                                    Database Lab<br>
+                                    🧪 Lab B<br>
+                                    👩‍🏫 TA: Lisa Chen
+                                </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>16:30 - 18:00</td>
+                                <td colspan="5" class="free">Free</td>
+                            </tr>
                             </tbody>
                         </table>
-                    </div>
+                        </section>
+
                 </div>
             </div>
 

@@ -15,6 +15,7 @@ img {
 body {
     width: 100%;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 /* Header */
@@ -118,6 +119,16 @@ header {
     width: 7px;
     height: 7px;
     border-radius: 5px;
+}
+
+.header-right .admin-mode {
+    color: #16aa4c;
+    background: #bff8d4;
+    border-radius: 12px;
+    align-self: center;
+    padding: 3px 5px;
+    margin-left: 5px;
+    font-size: 10px;
 }
 
 
