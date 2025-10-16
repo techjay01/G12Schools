@@ -76,6 +76,7 @@
     padding: 2.5px 9px;
     border-radius: 8px;
     font-size: 0.8em;
+    align-items: center;
 }
 
 .announcement-message {

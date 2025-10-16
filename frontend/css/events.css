@@ -130,9 +130,12 @@
   border-radius: 4px;
   padding: 2px 4px;
   position: absolute;
+  right: 5px;
+  left: 5px;
   bottom: 5px;
-  width: 6em;
   white-space: nowrap;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
