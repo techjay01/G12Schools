@@ -6,7 +6,11 @@
 
 .main-announcement-description {
     padding-bottom: 10px;
-    font-size: small;
+}
+
+.main-announcement-description p {
+    font-size: 11px;
+    color: gray;
 }
 
 .main-announcement-head {
@@ -75,7 +79,7 @@
 }
 
 .announcement-message {
-    font-size: 0.8em;
+    font-size: 0.75em;
     margin-bottom: 0.5em;
     color: gray;
 }
