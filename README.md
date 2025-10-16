@@ -83,7 +83,7 @@ Password: ********
 | Version Control | Git + GitHub |
 
 ---
-
+<!-- 
 ## 👥 Team Members (Group of 10)
 
 | Role | Name |
@@ -99,7 +99,7 @@ Password: ********
 | Deployment / Hosting | |
 | Security Analyst | |
 
----
+--- -->
 
 ## 🧠 Contribution Guide
 
