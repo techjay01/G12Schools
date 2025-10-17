@@ -4,8 +4,12 @@
     padding: 1em;
 }
 
-.results-details {
+.archive-details {
     padding-bottom: 10px;
+}
+
+.archive-details p {
+  font-size: 13px;
 }
 
 .archive-head {
@@ -22,16 +26,16 @@
 
 .archive-menu {
     margin: 1em 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
     padding-bottom: 22px;
 }
 
 .archive-menu button {
     border: none;
     border-radius: 7px;
-    width: 200px;
     height: 36px;
-    margin-right: 10px;
     padding: 0 10px;
     display: flex;
     align-items: center;
@@ -148,4 +152,12 @@ tbody tr:hover {
     font-size: 21px;
     font-weight: bold;
     color: #00a63e;
+}
+
+
+@media (max-width: 630px) {
+    .archive-after,
+    .archive-menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

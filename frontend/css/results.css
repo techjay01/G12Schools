@@ -8,6 +8,10 @@
     padding-bottom: 10px;
 }
 
+.results-details p {
+  font-size: 13px;
+}
+
 .results-head {
     display: flex;
     align-items: center;

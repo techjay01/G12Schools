@@ -6,7 +6,7 @@
 
 .timetable-head {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
 }
 
@@ -21,8 +21,9 @@
     margin-right: 3px;
 }
 
-.timetable-title-details {
-    font-size: medium    ;
+.timetable-title-details p,
+.timetable-schedule-div p {
+    font-size: 12px;
 }
 
 .timetable-options {
@@ -42,21 +43,24 @@
     font-size: 11px;
 }
 
+
 .timetable-options img {
-    width: 13px;
-    height: 13px;
+    width: 11px;
+    height: 11px;
 }
 
 .timetable-toggle {
-    border: none;
-    background: #ddd;
+    border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    width: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
     margin: 1.5em 0 0.5em 0;
 }
 
 .timetable-toggle button {
+    flex: 1;
     background: none;
     border: none;
     padding: 0.7em 1em;
@@ -159,4 +163,30 @@ th {
     font-size: 21px;
     font-weight: bold;
     color: #00a63e;
+}
+
+
+
+@media (max-width: 700px) {
+    .timetable-options button {
+        width: 140px;
+        height: 32px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 630px) {
+    .timetable-options button {
+        width: 120px;
+    }
+
+    .timetable-after {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .timetable-options button {
+        width: 100px;
+    }
 }
