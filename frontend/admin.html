@@ -9,6 +9,7 @@
 </head>
 <body>
     <aside class="sidebar" id="sidebar">
+        <div class="close-sidebar">x</div>
         <div class="sidebar-top">
             <div class="sidebar-top-website-info">
                 <img src="assets/logo.jpg" alt="G12Schools logo">
@@ -35,21 +36,26 @@
 
         <div class="sidebar-bottom">
             <ul>
-                <li><a href="admin.html"><img src="assets/icons/admin.png" alt="admin icon">Admin Panel</a></li>
-                <li><a href="index.html"><img src="assets/icons/login.png" alt="login icon">Logout Admin</a></li>
+                <li><a href="login.html"><img src="assets/icons/login.png" alt="login icon">Admin Login</a></li>
+                <li><a href="index.html"><img src="assets/icons/login.png" alt="logout icon">Logout Admin</a></li>
             </ul>
         </div>
     </aside>
 
-    <div class="sidebar-active" id="sidebar-active">
+    <div>
         <header>
             <div class="header-left">
                 <img src="assets/icons/menu.png" alt="menu icon" id="menu-icon">
                 <div class="header-left-department-info">
                     <img src="assets/logo.jpg" alt="G12 Logo">
-                    <div>
+                    <div class="desktop">
                         <h2>Computer Science Department</h2>
                         <p>School of Information and Communication Technology</p>
+                    </div>
+
+                    <div class="mobile">
+                        <h2>CSC Dept</h2>
+                        <p>School of ICT</p>
                     </div>
                 </div>
             </div>
@@ -220,24 +226,7 @@
         </footer>
     </div>
 
-    <script>
-        const menuIcon = document.getElementById('menu-icon');
-        const sidebar = document.getElementById('sidebar');
-        const sidebarActive = document.getElementById('sidebar-active');
-
-        menuIcon.addEventListener('click', () => {
-        sidebar.classList.toggle('active');
-        sidebarActive.classList.toggle('shift');
-        });
-
-        document.addEventListener('click', (e) => {
-        if (!sidebar.contains(e.target) && !menuIcon.contains(e.target)) {
-            sidebar.classList.remove('active');
-            sidebarActive.classList.remove('shift');
-        }
-        });
-
-    </script>
+    <script src="js/sidebar.js"></script>
     
 </body>
 </html>

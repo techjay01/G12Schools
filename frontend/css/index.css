@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
 }
 
@@ -29,15 +30,17 @@
     padding: 1.1em;
 }
 
+.main-announcements p,
+.article-announcement p,
+.aside-upcoming-events p {
+    font-size: 14px;
+}
+
 .article-announcement {
     border: 1px solid #ddd;
     padding: 1em 1em 1em 1em;
     border-radius: 12px;
     margin-top: 1em;
-}
-
-.article-announcement p {
-    font-size: 14px;
 }
 
 .article-announcement .feint-text {
@@ -49,7 +52,7 @@
 
 .article-announcement-title {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     margin-bottom: 0.5em;
 }
@@ -65,6 +68,7 @@
     padding: 2px 8px;
     border-radius: 8px;
     font-size: 0.75em;
+    text-align: center;
 }
 
 
@@ -136,3 +140,36 @@
     font-size: 12px;
 }
 
+
+
+@media (max-width: 750px) {
+    .hero-section h1 {
+        font-size: 1.6em;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .article-announcement h4 {
+        font-size: 14px;
+    }
+
+    .article-announcement p,
+    .article-announcement-tags,
+    .aside-view-all {
+        font-size: 13px;
+    }
+
+    .article-announcement .feint-text {
+        font-size: 11px;
+    }
+
+    .aside-stat p {
+        font-size: 14px;
+    }
+}
