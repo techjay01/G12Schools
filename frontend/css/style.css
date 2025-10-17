@@ -174,6 +174,22 @@ header {
     }
 }
 
+@media (max-width: 500px) {
+    .header-left-department-info img {
+        width: 30px;
+        height: 30px;
+    }
+    .mobile h2 {
+        font-size: 16px;
+    }
+    .mobile p {
+        font-size: 12px;
+    }
+    .header-search-bar-div input {
+        width: 100px;
+    }
+}
+
 
 
 /* Sidebar */
@@ -191,14 +207,23 @@ header {
     transition: 0.3s;
 }
 
-.close-sidebar {
+.close-sidebar.active {
     position: absolute;
     top: 0;
-    right: 0;
-    padding: 1px 7px;
-    color: white;
-    background: red;
+    right: -22px;
+    padding: 0 7px 1px;
+    color: black;
+    border: 1px solid #ddd;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+    border-top: none;
     cursor: pointer;
+}
+
+.close-sidebar.active:active,
+.close-sidebar.active:hover {
+    background: #ddd;
+    color: black;
 }
 
 .sidebar.active {

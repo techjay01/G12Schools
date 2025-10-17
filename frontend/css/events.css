@@ -154,5 +154,6 @@
 @media (max-width: 550px) {
  .event-month-list-toggle button {
     padding: 0.5em 0.5em;
+    font-size: 12px;
  }
 }

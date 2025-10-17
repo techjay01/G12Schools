@@ -30,9 +30,9 @@ body {
     background-color: rgb(255, 255, 255);
     position: relative;
     padding: 1.5em;
-    margin-top: 5em;
+    margin-top: 4em;
     border-radius: 12px;
-    width: 90%;
+    width: 50%;
     max-width: 400px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     animation: slideIn 0.3s ease;
@@ -54,6 +54,7 @@ body {
 .admin-login-request {
     color: #6c6c6c;
     margin: 0.5em 0 0 0;
+    font-size: 14px;
 }
 
 .login-head {
