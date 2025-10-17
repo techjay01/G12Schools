@@ -46,8 +46,8 @@
 }
 
 .main-announcement-filter img {
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
 }
 
 .main-announcement {
@@ -59,7 +59,7 @@
 
 .announcement-title {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     margin-bottom: 0.5em;
 }
@@ -77,6 +77,8 @@
     border-radius: 8px;
     font-size: 0.8em;
     align-items: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .announcement-message {
@@ -106,3 +108,34 @@
 }
 
 
+@media (max-width: 650px) {
+    .main-announcement-description h3,
+    .announcement-title h3 {
+        font-size: 16px;
+    }
+ 
+    .main-announcement-filter button {
+        font-size: 12px;
+        height: 32px;
+    }
+
+    .announcement-title {
+        align-items: top;
+    }
+
+    .announcement-title p,
+    .announcement-details {
+        font-size: 11px;
+    }
+
+}
+
+@media (max-width:575px) {
+    .announcement-title h3 {
+        font-size: 14px;
+    }
+
+    .announcement-title p {
+        font-size: 9px;
+    }
+}
