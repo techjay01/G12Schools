@@ -48,6 +48,7 @@
     border: none;
     padding: 0.7em 1em;
     cursor: pointer;
+    position: relative;
 }
 
 .admin-dos button:focus {
@@ -55,6 +56,7 @@
     border-radius: 7px;
     margin: 3px;
 }
+
 
 .admin-trois h4 {
     font-size: 1em;
@@ -68,13 +70,13 @@
 }
 
 .admin-quatre {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     margin: 1.2em 0;
 }
 
 .admin-dashbox {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +107,7 @@
 
 .admin-cinq {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1em;
 }
 
@@ -225,3 +227,31 @@
     padding: 3px 8px;
 }
 
+
+@media (max-width: 1000px) {
+    .admin-cinq {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 730px) {
+    .admin-dos img {
+        margin: 0;
+        margin-bottom: 2px;
+    }   
+    .admin-dos button {
+        flex-direction: column;
+    }
+    .admin-quatre {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .admin-cinq {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .admin-dos p {
+        font-size: 11px;
+    }
+}
