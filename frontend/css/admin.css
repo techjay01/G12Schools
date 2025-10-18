@@ -227,6 +227,7 @@
     padding: 3px 8px;
 }
 
+/* Responsiveness */
 
 @media (max-width: 1000px) {
     .admin-cinq {
@@ -252,6 +253,9 @@
 
 @media (max-width: 575px) {
     .admin-dos p {
-        font-size: 11px;
+        font-size: 10.5px;
+    }
+    .admin-dos button {
+        padding: 0.5em 0.7em;
     }
 }
